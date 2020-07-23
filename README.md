@@ -65,11 +65,13 @@ You can download the accompanying Python scripts as follows:
 
 You'll need to install Python and a number of external modules on your machine to run the example scripts and perform the exercises. To make it easier we will use a Python distribution that already comes with a large number of modules that are useful for scientific computing, called Anaconda. Anaconda also comes with a module manager called Conda, which we will use to install a few modules.
 
-For this course we will be working with Python 3 which is used in both ArcGIS Pro and QGIS 3.
+For this course we will be working with **Python 3** which is used in both ArcGIS Pro and QGIS 3.
 
 You can install Anaconda and the needed modules as follows:
 
 -   Download and install Anaconda -> [Download Anaconda](https://www.anaconda.com/download/) and double click it. You can accept the default choices. You can skip the installation of Visual Studio Code. This is a text editor made for coding, and while it is a really good application, we will not use it in this course.
+
+- 	For a short introduction to Anaconda please watch either [https://www.youtube.com/watch?v=zYNRqVimU3Q](this) or [https://www.youtube.com/watch?v=ou65T_mC8Z8](this) video. 
 
 -   Install the `geopandas` module: open a Anaconda prompt (`Start Menu` -> `Anaconda` -> `Anaconda Prompt`) in administrator mode (right click -> More -> Run as administrator) and enter the following command:
 

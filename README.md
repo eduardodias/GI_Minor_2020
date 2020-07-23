@@ -71,7 +71,7 @@ You can install Anaconda and the needed modules as follows:
 
 -   Download and install Anaconda -> [Download Anaconda](https://www.anaconda.com/download/) and double click it. You can accept the default choices. You can skip the installation of Visual Studio Code. This is a text editor made for coding, and while it is a really good application, we will not use it in this course.
 
-- 	For a short introduction to Anaconda please watch either [https://www.youtube.com/watch?v=zYNRqVimU3Q](this) or [https://www.youtube.com/watch?v=ou65T_mC8Z8](this) video. 
+- 	For a short introduction to Anaconda please watch either [this] (https://www.youtube.com/watch?v=zYNRqVimU3Q) or [this](https://www.youtube.com/watch?v=ou65T_mC8Z8) video. 
 
 -   Install the `geopandas` module: open a Anaconda prompt (`Start Menu` -> `Anaconda` -> `Anaconda Prompt`) in administrator mode (right click -> More -> Run as administrator) and enter the following command:
 

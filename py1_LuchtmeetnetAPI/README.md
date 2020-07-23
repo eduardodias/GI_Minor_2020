@@ -1,4 +1,4 @@
-# Chapter 2. Luchtmeetnet API
+# Practical Assignment 1 - py1 Luchtmeetnet API
 
 Data gets made available in different ways. Sometimes, for example, you simply go to a website and click a download link, sometimes you need to [scrape it off a website](https://realpython.com/python-web-scraping-practical-introduction/), and sometimes you can use an [API (application programming interface)](https://en.wikipedia.org/wiki/Application_programming_interface). An API is a set of definitions and methods for different computer software to communicate with each other. It is a general term, but in the context of data acquisition an API makes it easier to retrieve data in an automatic way. To make use of this automation we need a way to tell the computer how to use the API. This can be done using various tools and/or programming languages. We will use python to this end, since it is a very accessible and flexible programming language, with a lot of modules available able to provide a broad range of extra functionality. Python is also the programming language used by GIS packages such as ArcGIS (arcpy) and QGIS.
 
@@ -17,18 +17,10 @@ import requests
 Then we request data using a url (in this case a website):
 
 ```python
-response = requests.get('https://github.com/SPINLab/gi-minor-python-course-2018/')
+response = requests.get('https://github.com/SPINLab/GI_Minor_2020/')
 ```
 
 The website (html file) is now stored in the response object `response`. You can see the content as follows:
-
-Python 2:
-
-```python
-print response.content
-```
-
-Python 3:
 
 ```python
 print(response.content)

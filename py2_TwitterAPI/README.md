@@ -1,4 +1,4 @@
-## Chapter 3. Twitter API
+## Practical Assingment 2 - py2 Twitter API
 
 Another interesting API is the one from Twitter. Tweets can be a great source of information on range of topics. It has, for example, been used in [mapping natural disasters](http://www.ra.ethz.ch/CDStore/www2010/www/p851.pdf), [predicting the stock market](https://arxiv.org/pdf/1010.3003&), [mapping the aurora borealis](http://onlinelibrary.wiley.com/doi/10.1002/2015GL063709/full), [predicting election results](https://www.aaai.org/ocs/index.php/ICWSM/ICWSM10/paper/viewFile/1441/1852), and [assessing public health](https://www.aaai.org/ocs/index.php/ICWSM/ICWSM11/paper/viewFile/2880/3264).
 

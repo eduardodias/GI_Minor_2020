@@ -4,7 +4,7 @@ Dear student,
 
 Welcome to the python part of the Geo Information Minor organized by the Vrije Universiteit Amsterdam together with Utrecht University. In this course we'll take a small dive into the Python programming language. We'll cover some **basic programming concepts** and briefly delve into **data acquisition** by using API's.
 
-By the way: Did you know that the python programming language was developed in Amsterdam? Guide van Rossum, a researcher from the **Centrum voor Wiskunde en Informatica**, developed it in the 1990s. [https://en.wikipedia.org/wiki/Python_(programming_language)](https://en.wikipedia.org/wiki/Python_(programming_language))
+By the way: Did you know that the python programming language was developed in Amsterdam? Guido van Rossum, a researcher from the **Centrum voor Wiskunde en Informatica**, developed it in the 1990s. [https://en.wikipedia.org/wiki/Python_(programming_language)](https://en.wikipedia.org/wiki/Python_(programming_language))
 
 From previous iterations we've distilled that learning the basics isn't the challenge (anymore) due to the abundance of open online courses and interactive online tutorials. **Rather, the question is: how do I craft useful scripts that solve real-world problems?**
 

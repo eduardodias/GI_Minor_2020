@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
-# Choose a station number (e.g. the number of the amsterdam station of the previous exercise) and save to a variable
+# Choose a station number (e.g. the number of the station of the previous exercise) and save to a variable
 
 
 
@@ -34,8 +34,9 @@ import matplotlib.pyplot as plt
 # and create a datetime object with it that python can interpret
 # before we can plot the data
 # https://pymotw.com/2/datetime/#formatting-and-parsing
-# For simplicity we give you the correct time format (but please try to understand it):
-time_format = '%Y-%m-%dT%H:%M:%S+00:00'
+# For simplicity we give you the correct time format (but please try to understand it): 
+# REMOVE THE HASHTAG IN THE NEXT LINE 
+#time_format = '%Y-%m-%dT%H:%M:%S+00:00'
 
 # Change the loop so that the timestamp information is parsed using the format (https://pymotw.com/2/datetime/#formatting-and-parsing)
 
@@ -73,10 +74,14 @@ time_format = '%Y-%m-%dT%H:%M:%S+00:00'
 # a DataFrame is a datatype that stores tabular data, kinda like an excel sheet
 # https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html
 # We will initaite a DataFrame:
-df = pd.DataFrame()
+
+# REMOVE THE HASHTAG IN THE NEXT LINE
+#df = pd.DataFrame()
 # And then save the lists to columns in the DatFrame
-df['timestamps'] = timestamps
-df['values'] = values
+
+# REMOVE THE HASHTAG IN THE NEXT TWO LINES
+#df['timestamps'] = timestamps
+#df['values'] = values
 
 # now that the data is in a DataFrame we can use the sort_values function of the DataFrame to sort the values by the timestamps
 # https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.sort_values.html
@@ -94,4 +99,6 @@ df['values'] = values
 
 # Save the DataFrame to a csv.
 # https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.to_csv.html
-df.to_csv('timeseries.csv')
+
+# REMOVE THE HASHTAG IN THE NEXT LINE
+#df.to_csv('timeseries.csv')

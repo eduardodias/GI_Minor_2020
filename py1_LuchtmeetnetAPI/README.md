@@ -3,7 +3,7 @@
 ## Introduction
 A recent study of SPINlab researcher Dr. Bo Andrée showed a relationship between air pollution and confirmed COVID-19 cases. He concluded that a high level of Particulate Matter with a diameter of 2.5 μm or less per m3 is a highly significant predictor for the number of confirmed COVID-19 cases and related hospital admissions. Why this is the case is still unclear. The two most accepted theories are however that either people living in areas with high levels of air pollution already have lung damage due to the pollution, or that the virus latches on aerosols in the air which speeds up the spread of the virus. Either way are the results of this study important in controlling the spread of the virus. It shows that more and or different measures might have to be taken to protect people that live in areas with high levels of air pollution.
 
-The results of this study even made it to the national [news] (https://spinlab.vu.nl/relation-between-air-pollution-and-confirmed-covid-19-cases-researched/).
+The results of this study even made it to the national [news](https://spinlab.vu.nl/relation-between-air-pollution-and-confirmed-covid-19-cases-researched/).
 
 To access the full article follow this link and download the pdf: https://openknowledge.worldbank.org/handle/10986/33664
 

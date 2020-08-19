@@ -6,7 +6,8 @@ from shapely.geometry import Point
 
 
 # Start a pandas DataFrame
-df = #???
+# REMOVE THE HASHTAG IN THE NEXT LINE
+#df = #???
 
 
 
@@ -51,21 +52,24 @@ df = #???
 
 # We will now create Point geometries from the coordinate data
 # http://geopandas.org/gallery/create_geopandas_from_pandas.html#sphx-glr-gallery-create-geopandas-from-pandas-py
-df['geom'] = #???
+# REMOVE THE HASHTAG IN THE NEXT LINE
+#df['geom'] = #???
 
 
 
 
 # to convert this regular DataFrame to a GeoDataFrame we need tell GeoPandas in which column the geometry is located
 # http://geopandas.org/gallery/create_geopandas_from_pandas.html#sphx-glr-gallery-create-geopandas-from-pandas-py
-gdf = #???
+# REMOVE THE HASHTAG IN THE NEXT LINE
+#gdf = #???
 
 # Geopandas makes it easy to create a simple plot
 # example:
-nederland = gpd.read_file('./shp/nederland.shp')
-base = nederland.plot()
-gdf.plot(ax=base, color='red')
-plt.show()
+# REMOVE THE HASHTAGS IN THE NEXT FOUR LINES
+#nederland = gpd.read_file('./shp/nederland.shp')
+#base = nederland.plot()
+#gdf.plot(ax=base, color='red')
+#plt.show()
 
 # We will now try to color the points based on the measured value of a chemical compound.
 # Chose a chemical compound like before.
@@ -83,12 +87,15 @@ plt.show()
 
 
 # Save the list to a column in the GeoDataFrame
-gdf['value'] = #????
+# REMOVE THE HASHTAG IN THE NEXT LINE
+#gdf['value'] = #????
 
 # Plot using geopandas:
-base = nederland.plot()
-gdf.dropna().plot(ax=base, column='value', scheme='Fisher_Jenks', k=20, cmap='YlOrRd')
-plt.show()
+# REMOVE THE HASHTAGS IN THE NEXT THREE LINES
+#base = nederland.plot()
+#gdf.dropna().plot(ax=base, column='value', scheme='Fisher_Jenks', k=20, cmap='YlOrRd')
+#plt.show()
 
 # Save to a shapefile:
-gdf.to_file('./shp/measurements.shp')
+# REMOVE THE HASHTAG IN THE NEXT LINE
+#gdf.to_file('./shp/measurements.shp')

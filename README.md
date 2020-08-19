@@ -26,7 +26,7 @@ This course consists of a self-learning part and two hands-on workshops. Each wo
 
 The program is as follows:
 
--   self-study: 
+-   self-study 
 -   practical assignment py1 17/09 - using the Luchtmeetnet API, with the requests module
 -   practical assignment py2 18/09 - using the Twitter API, with the twython module
 

@@ -7,9 +7,9 @@ The results of this study made it to the national news see: https://spinlab.vu.n
 
 To access the full article follow this link and download the pdf: https://openknowledge.worldbank.org/handle/10986/33664
 
-For this study Andrée used spatial data about the average level of particulate matter per m3 in 2017 which he obtained from the "Atlas van de leefomgeving" - the atlas of the living environment https://www.atlasleefomgeving.nl/kaarten. The data layers he used are: 
-- Particulate Matter 2.5 μm or less per m3: https://nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/1689e358-6555-4b5d-902f-7bc36cf2c266 
-- Particulate Matter 10 μm or less per m3: https://nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/10b1f613-e492-44f6-9745-b444880c136b?tab=general
+For this study Andrée used spatial data about the average level of particulate matter per m3 in 2017 which he obtained from the "Atlas van de leefomgeving" - the atlas of the living environment [link] (https://www.atlasleefomgeving.nl/kaarten). The data layers he used are: 
+- [Particulate Matter 2.5 μm or less per m3] (https://nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/1689e358-6555-4b5d-902f-7bc36cf2c266) 
+- [Particulate Matter 10 μm or less per m3] (https://nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/10b1f613-e492-44f6-9745-b444880c136b?tab=general)
 Both layers are the result of interpolated data points from measuring stations. A full description about how these data layers are modelled can be found here (in Dutch) https://www.nsl-monitoring.nl/informatie/data-nsl/
 
 In this practical assignment it is your task to collect data from air measuring stations and to see how these correspond with the modelled dataset used by Andrée. For this you are going to use the luchtmeetnet - Air measurement network. Luchtmeetnet is hosted by the Netherlands National Institute for Public Health and the Environment (or Rijksinstituut voor Volksgezondheid en Milieu (RIVM)) and contains information about air quality.
@@ -104,9 +104,9 @@ The script will result in two shapefiles PM10.shp and PM25.shp containing the me
 
 Now go to https://www.atlasleefomgeving.nl/kaarten and download the PM 10 and PM 2.5 data used by Andrée. Compare the data you retrieved from the luchtmeetnet API and answer the following questions. 
 
-    1. Do the measurements from the Luchtmeetnet correspond with the datalayer PM 10 and PM 2.5 from the atlas van de leefomgeving?
-    2. Do you think that the measurements from the Luchtmeetnet are sufficient as input for to generate the maps layers? 
-    3. Image that Andrée would have used the data from the Luchtmeetnet directly in the way you did. How do you think that would have changed his analysis?
-    4. Now look back at the fit for purpose framework you developed for the first practical assignment. How fit would your generated point data be for the purpose of Andrée´s study? 
+   1. Do the measurements from the Luchtmeetnet correspond with the datalayer PM 10 and PM 2.5 from the atlas van de leefomgeving?
+   2. Do you think that the measurements from the Luchtmeetnet are sufficient as input for to generate the maps layers? 
+   3. Image that Andrée would have used the data from the Luchtmeetnet directly in the way you did. How do you think that would have changed his analysis?
+   4. Now look back at the fit for purpose framework you developed for the first practical assignment. How fit would your generated point data be for the purpose of Andrée´s study? 
 
 Add your answers to `Practical_assignment_1.py` and upload this `.py` file together with the two shape files you created to canvas.

@@ -1,10 +1,25 @@
-# Practical Assignment 1 - py1 Luchtmeetnet API
+# Practical Assignment 1 - py1 Luchtmeetnet API 
 
-Data gets made available in different ways. Sometimes, for example, you simply go to a website and click a download link, sometimes you need to [scrape it off a website](https://realpython.com/python-web-scraping-practical-introduction/), and sometimes you can use an [API (application programming interface)](https://en.wikipedia.org/wiki/Application_programming_interface). An API is a set of definitions and methods for different computer software to communicate with each other. It is a general term, but in the context of data acquisition an API makes it easier to retrieve data in an automatic way. To make use of this automation we need a way to tell the computer how to use the API. This can be done using various tools and/or programming languages. We will use python to this end, since it is a very accessible and flexible programming language, with a lot of modules available able to provide a broad range of extra functionality. Python is also the programming language used by GIS packages such as ArcGIS (arcpy) and QGIS.
+## Introduction
+A recent study of SPINlab researcher Dr. Bo Andrée showed a relationship between air pollution and confirmed COVID-19 cases. He concluded that a high level Particulate Matter with a diameter of 2.5 μm or less per m3 is a highly significant predictor for the number of confirmed COVID-19 cases and related hospital admissions. Why this is the case is still unclear. The two most accepted theories are however that either people living in areas with high levels of air pollution already have lung damage due to the pollution, or that the virus latches on aerosols in the air which speeds up the spread of the virus. Either way are the results of this study important in controlling the spread of the virus. It shows that more and or different measures might have to be taken to protect people that live in areas with high levels of air pollution.
 
-As a data source to practice with we are going to use an API of the Netherlands National Institute for Public Health and the Environment (or Rijksinstituut voor Volksgezondheid en Milieu (RIVM)), concerning the Luchtmeetnet (air measurements network). They publish the measurements of different chemical compounds in the air online, at https://api.luchtmeetnet.nl/open_api. The documentation of this API can be found at https://documenter.getpostman.com/view/1562017/RVnbBxf9. The techniques used in this exercise can also be used to download data from many more API's from other sources, since most API's follow a similar structure, which is called [REST](https://en.wikipedia.org/wiki/Representational_state_transfer).
+The results of this study made it to the national news see: https://spinlab.vu.nl/relation-between-air-pollution-and-confirmed-covid-19-cases-researched/
 
-## Introduction to Requests
+To access the full article follow this link and download the pdf: https://openknowledge.worldbank.org/handle/10986/33664
+
+For this study Andrée used spatial data about the average level of particulate matter per m3 in 2017 which he obtained from the "Atlas van de leefomgeving" - the atlas of the living environment https://www.atlasleefomgeving.nl/kaarten. The data layers he used are: 
+- Particulate Matter 2.5 μm or less per m3: https://nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/1689e358-6555-4b5d-902f-7bc36cf2c266 
+- Particulate Matter 10 μm or less per m3: https://nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/10b1f613-e492-44f6-9745-b444880c136b?tab=general
+Both layers are the result of interpolated data points from measuring stations. A full description about how these data layers are modelled can be found here (in Dutch) https://www.nsl-monitoring.nl/informatie/data-nsl/
+
+In this practical assignment it is your task to collect data from air measuring stations and to see how these correspond with the modelled dataset used by Andrée. For this you are going to use the luchtmeetnet - Air measurement network. Luchtmeetnet is hosted by the Netherlands National Institute for Public Health and the Environment (or Rijksinstituut voor Volksgezondheid en Milieu (RIVM)) and contains information about air quality.
+
+## About APIs 
+Before we start let us first tell you a bit more about the data. Data gets made available in different ways. Sometimes, for example, you simply go to a website and click a download link, sometimes you need to [scrape it off a website](https://realpython.com/python-web-scraping-practical-introduction/), and sometimes you can use an [API (application programming interface)](https://en.wikipedia.org/wiki/Application_programming_interface). An API is a set of definitions and methods for different computer software to communicate with each other. It is a general term, but in the context of data acquisition an API makes it easier to retrieve data in an automatic way. To make use of this automation we need a way to tell the computer how to use the API. This can be done using various tools and/or programming languages. We will use python to this end, since it is a very accessible and flexible programming language, with a lot of modules available able to provide a broad range of extra functionality. Python is also the programming language used by GIS packages such as ArcGIS (arcpy) and QGIS.
+
+As a data source for this practical assignment we are going to use the the Luchtmeetnet (air measurements network) API published by the RIVM. The luchtmeetnet contains measurements of different chemical compounds in the air and can be accessed at https://api.luchtmeetnet.nl/open_api. The documentation of this API can be found at https://documenter.getpostman.com/view/1562017/RVnbBxf9. The techniques used in this exercise can also be used to download data from many more API's from other sources, since most API's follow a similar structure, which is called [REST](https://en.wikipedia.org/wiki/Representational_state_transfer).
+
+## Requests
 
 To retrieve data from the API we will use the `requests` module. Requests is a fairly straight forward, easy to use, and powerful library for sending requests over the internet (HTTP). Requests retrieves data from an url, which can be a website, an image, or any other file. It stores the response from the server in an python object. From this object you can get all the needed information. A basic request using requests looks like this:
 
@@ -59,7 +74,7 @@ A REST API will always respond with [JSON](https://en.wikipedia.org/wiki/JSON) d
 }
 ```
 
-The observant reader will have noticed that this is exactly the format of Python dictionaries and lists. A response from Requests will have a [method specifically made to deal with JSON data](http://docs.python-requests.org/en/master/user/quickstart/#json-response-content) and will return a Python dictionary. Perfect for when we want to use the data in Python. It is used as follows:
+You might have noticed that this is exactly the format of Python dictionaries and lists. A response from Requests will have a [method specifically made to deal with JSON data](http://docs.python-requests.org/en/master/user/quickstart/#json-response-content) and will return a Python dictionary. Perfect for when we want to use the data in Python. It is used as follows:
 
 ```python
 response = requests.get('https://jsonplaceholder.typicode.com/todos/1')
@@ -70,22 +85,28 @@ print(response_dictionary['userId'])
 
 ## Getting Started
 
-1. Go to the [Luchtmeetnet API documentation](https://documenter.getpostman.com/view/1562017/RVnbBxf9). Explore the API (what directories are there? What data do they return? Which options do they have?)
+For this practical assignment we have prepared two exercises which will help you to understand which steps you will need to take to extract data from luchtmeetnet in order to reproduce the map for the average level of particulate matter per m3 in 2017. However, before you open them we first want you to go to the [Luchtmeetnet API documentation](https://documenter.getpostman.com/view/1562017/RVnbBxf9) and explore the API (what directories are there? What data do they return? Which options do they have?) Think of which url we can use to retrieve a list of measurement locations (stations) and how to retrieve information about a station.
 
-2. Think of which url we can use to retrieve a list of measurement locations (stations) and how to retrieve information about a station.
+## Excercise 1: Basic Info
 
-3. Open `1_basic_info.py`. Create a python script which retrieves basic information from the API. The `.py` file contains pointers and hints to help you.
+Once you explored the API open `1_basic_info.py` in spyder and go trough the different steps. This script will allow you to retrieve basic information from the API. The file contains pointers and hints to help you. But remember, coding can be very frustrating. Most of the time you are trying different approaches to find out that you were on the wrong path. In the end it will be very rewarding to finally get what you we looking for. 
 
-## Timeseries data
+## Excercise 2: Timeseries data
 
-1. Which url could we use to request measurement data of a single station? Which parameters would we have to set?
+Now that you understand how to get basic information from the Luchtmeetnet API we are going to obtain data from a specific time period. Have another look at the [Luchtmeetnet API documentation](https://documenter.getpostman.com/view/1562017/RVnbBxf9) and try to determine which url we could use to request measurement data of a single station? Which parameters would we have to set? Now choose a location (for example the one in Amsterdam of the previous exercise) and retrieve the location number. Next, open `2_timeseries.py` and create a python script which retrieves measurement data of a station and plot the data.
 
-2. Choose a location (for example the one in Amsterdam of the previous exercise) and retrieve the location number.
+## Practical Assignment 
+With the two exercises completed you are now ready to extract the data from the luchtmeetnet API which can be used as input to reproduce the map for the average level of particulate matter of 2.5 μm and 10 μm or less per m3 in 2017. Note, that we do not ask you to interpolate the data. We just want you to extract the different point datasets. 
 
-3. Open `2_timeseries.py`. Create a python script which retrieves measurement data of a station and plot the data. The `.py` file contains pointers and hints to help you.
+Again have a look at the [Luchtmeetnet API documentation](https://documenter.getpostman.com/view/1562017/RVnbBxf9) and determine which data we need to request to make a map of all stations colored by the measurement of a particulate matter of 2.5 μm and 10 μm or less per m3. Now open Practical_assignment_1.py and create a python script which retrieves the average measurement data of PM 2.5 and PM 10 for 2017 for all of the Netherlands. 
 
-## Geo data
+The script will result in two shapefiles PM10.shp and PM25.shp containing the measurements of 2017. 
 
-1. Think of which data we need to request to make a map of all stations colored by the measurement of a chemical compound
+Now go to https://www.atlasleefomgeving.nl/kaarten and download the PM 10 and PM 2.5 data used by Andrée. Compare the data you retrieved from the luchtmeetnet API and answer the following questions. 
 
-2. Open 3_geo.py. Create a python script which retrieves the measurement data of a chemical compound for a single point in time for all of the Netherlands. The `.py` file contains pointers and hints to help you.
+    1. Do the measurements from the Luchtmeetnet correspond with the datalayer PM 10 and PM 2.5 from the atlas van de leefomgeving?
+    2. Do you think that the measurements from the Luchtmeetnet are sufficient as input for to generate the maps layers? 
+    3. Image that Andrée would have used the data from the Luchtmeetnet directly in the way you did. How do you think that would have changed his analysis?
+    4. Now look back at the fit for purpose framework you developed for the first practical assignment. How fit would your generated point data be for the purpose of Andrée´s study? 
+
+Add your answers to `Practical_assignment_1.py` and upload this `.py` file together with the two shape files you created to canvas.

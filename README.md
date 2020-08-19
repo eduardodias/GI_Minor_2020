@@ -34,7 +34,7 @@ Each practical assignment is accompanied by a short manual and some Python scrip
 
 ## Self-study: 
 
-To maximize the time available for the hands-on lectures and exercises we kindly ask you to complete a number Python lessons in advance **(BEFORE the 16th of September)**.
+To maximize the time available for the hands-on lectures and exercises we kindly ask you to complete a number Python lessons in advance **(BEFORE the 17th of September)**.
 
 There are multiple online tutorial to learn the basics of python. We give you a couple of options of which you can decide what works best for you. 
 

@@ -1,4 +1,6 @@
-## Practical Assingment 2 - py2 Twitter API
+## Practical Assingment 3 - Twitter API
+
+<i>Please note that this is an bonus assignment for those who are interested to extract data from twitter. In previous years we had this assignment included. However, since Twitter has limited the possibilities of the free part of the API over the last years, we decided to leave this practical assignment. Please note that we have not maintained this assignment since September 2019. We can thus not promise that everything still works.</i> 
 
 Another interesting API is the one from Twitter. Tweets can be a great source of information on range of topics. It has, for example, been used in [mapping natural disasters](http://www.ra.ethz.ch/CDStore/www2010/www/p851.pdf), [predicting the stock market](https://arxiv.org/pdf/1010.3003&), [mapping the aurora borealis](http://onlinelibrary.wiley.com/doi/10.1002/2015GL063709/full), [predicting election results](https://www.aaai.org/ocs/index.php/ICWSM/ICWSM10/paper/viewFile/1441/1852), and [assessing public health](https://www.aaai.org/ocs/index.php/ICWSM/ICWSM11/paper/viewFile/2880/3264).
 
@@ -11,6 +13,13 @@ Because we are limited by time (only recent tweets), by location (only Amsterdam
 The Twitter API is not an open API like the one from the Luchtmeetnet. It requires a Twitter account (that has joined Twitter Developer), and therefore when we use the API in python we need a way to identify ourselves. This is done using OAuth, a protocol for authorization, which is often used to grant applications access to information without using usernames and passwords. OAuth uses access tokens to verify the authenticity of the user making the requests.
 
 We could use the `requests` module as we did with the Luchtmeetnet API, but it would require quite a bit of set up. Luckily there are modules made specifically for the Twitter API. One of those modules is `twython`, which is the library we are going to use today.
+
+-   To install the `twython` module: open a Anaconda prompt (`Start Menu` -> `Anaconda` -> `Anaconda Prompt`) and enter the following command:
+
+    `conda install twython`
+
+    press `Enter` to execute it.
+
 
 ## Assignment Summary
 

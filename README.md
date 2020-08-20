@@ -2,7 +2,7 @@
 
 Dear student,
 
-Welcome to the python part of the Geo Information Minor organized by the Vrije Universiteit Amsterdam together with Utrecht University. In this course we'll take a small dive into the Python programming language. We'll cover some **basic programming concepts** and briefly delve into **data acquisition** by using API's.
+Welcome to the python part of the [Geo Information Minor](www.nationalegiminor.nl) organized by the Vrije Universiteit Amsterdam together with Utrecht University. In this course we'll take a small dive into the Python programming language. We'll cover some **basic programming concepts** and briefly delve into **data acquisition** by using API's.
 
 By the way: Did you know that the python programming language was developed in Amsterdam? Guido van Rossum, a researcher from the **Centrum voor Wiskunde en Informatica**, developed it in the 1990s. [https://en.wikipedia.org/wiki/Python_(programming_language)](https://en.wikipedia.org/wiki/Python_(programming_language))
 
@@ -15,20 +15,20 @@ This course is hands-on: **we don't have slides or extensive lecture notes;**. W
 ## Course overview
 
 -   Introduction to Python
--   Introduction to debugging
--   Getting help: introduction to StackOverflow and online documentation
 -   Introduction to API access using the requests module
--   Accessing the twitter API using the twython module
+-   Accessing air quality data and include in your GIS
+-   Accessing  (live) information about traffic and analyse the impact of traffic on air quality
 
 ## Methodology and programme
 
-This course consists of a self-learning part and two hands-on workshops. Each workshop lasts a full day. During these days (i.e. 17/09 and 18/09) we will be available from 11:00 - 12:45 and from 13:30 - 17:00 via zoom. Please leave your question in the chat. A link to our Zoom session can be found at Canvas. 
+This course consists of a self-learning part and two hands-on workshops. Each workshop lasts a full day. During these days (i.e. 14/09 and 15/09) we will be available from 11:00 - 12:45 and from 13:30 - 17:00 via zoom. Please leave your question in the chat. A link to our Zoom session can be found at Canvas. 
 
 The program is as follows:
 
--   self-study 
--   practical assignment py1 17/09 - using the Luchtmeetnet API, with the requests module
--   practical assignment py2 18/09 - using the Twitter API, with the twython module
+-   self-study (to be finished before th 14th of September)
+
+-   practical assignment py1 14/09/2020 - using the Luchtmeetnet API, with the requests module
+-   practical assignment py2 15/09/2020 - using the Twitter API, with the twython module
 
 Each practical assignment is accompanied by a short manual and some Python scripts, see the [lecture materials](https://github.com/SPINLab/gi-minor-python-course-2018#lecture-materials) section below for more information.
 
@@ -49,12 +49,16 @@ A more text book like format with a more in depth explanation can be accessed he
 
 ## Practical assignment
 
-This python course has two practical assignments. Each assignment contains a short manual and one or more Python scripts.
+This python course has two mandatory practical assignments. Each assignment contains a short manual and one or more Python scripts.
 
--   practical assignment py1 [py1 - Luchtmeetnet API](https://github.com/SPINLab/GI_Minor_2020/tree/master/py1_LuchtmeetnetAPI) - describes the Amsterdam API assignment + hints/tips/tricks about using an API.
--   practical assignment py2 [py2 - Twitter API](https://github.com/SPINLab/GI_Minor_2020/tree/master/py2_TwitterAPI) - describes the Twitter API assignment + hints/tips/tricks about using the Twitter API.
+-   [practical assignment luchtmeetnet](https://github.com/SPINLab/GI_Minor_2020/tree/master/py1_LuchtmeetnetAPI)
 
-You can download the accompanying Python scripts as follows:
+-   [practical assignment traffic](https://github.com/SPINLab/GI_Minor_2020/tree/master/py2_Traffic)
+
+Furthermore we have a bonus practical assignment about how to extract location information from twitter
+-   [practical assignment twitter](https://github.com/SPINLab/GI_Minor_2020/tree/master/py2_TwitterAPI)
+
+For these practical assignments you can download the accompanying files as follows:
 
 1. scroll to the top of this page
 2. click on the green button labelled `Clone or download`
@@ -77,12 +81,6 @@ You can install Anaconda and the needed modules as follows:
 
     press `Enter` to execute it.
 
--   Install the `twython` module: open a Anaconda prompt (`Start Menu` -> `Anaconda` -> `Anaconda Prompt`) and enter the following command:
-
-    `conda install twython`
-
-    press `Enter` to execute it.
-
 -   If you ever want to install other modules just Google `conda *module name*` and look for the result (with `Anaconda Cloud` in the title) with the latest version available for your platform. Copy the text under `To install this package with conda run one of the following:` and enter this command in the Anaconda prompt.
 
 Test if everything works:
@@ -94,7 +92,6 @@ Python 3:
 
 ```python
 import geopandas
-import twython
 
 print('Everything works!')
 ```
@@ -106,10 +103,10 @@ print('Everything works!')
 
 
 ## The team
+-   Maurice de Kleijn
+-	Devi Brands
+-	Dewi Westra
 
--   Eduardo Dias
+## Previous contributors
 -   Simeon Nedkov
 -   Chris Lucas
--	Dewi Westra
--	Devi Brands
--   Maurice de Kleijn

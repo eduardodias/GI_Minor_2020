@@ -2,7 +2,7 @@
 
 Dear student,
 
-Welcome to the python part of the Geo Information Minor organized by the Vrije Universiteit Amsterdam together with Utrecht University. In this course we'll take a small dive into the Python programming language. We'll cover some **basic programming concepts** and briefly delve into **data acquisition** by using API's.
+Welcome to the python part of the [Geo Information Minor](www.nationalegiminor.nl) organized by the Vrije Universiteit Amsterdam together with Utrecht University. In this course we'll take a small dive into the Python programming language. We'll cover some **basic programming concepts** and briefly delve into **data acquisition** by using API's.
 
 By the way: Did you know that the python programming language was developed in Amsterdam? Guido van Rossum, a researcher from the **Centrum voor Wiskunde en Informatica**, developed it in the 1990s. [https://en.wikipedia.org/wiki/Python_(programming_language)](https://en.wikipedia.org/wiki/Python_(programming_language))
 
@@ -51,12 +51,14 @@ A more text book like format with a more in depth explanation can be accessed he
 
 This python course has two mandatory practical assignments. Each assignment contains a short manual and one or more Python scripts.
 
--   [practical assignment luchtmeetnet](https://github.com/SPINLab/GI_Minor_2020/tree/master/py1_LuchtmeetnetAPI) - describes the Amsterdam API assignment + hints/tips/tricks about using an API.
+-   [practical assignment luchtmeetnet](https://github.com/SPINLab/GI_Minor_2020/tree/master/py1_LuchtmeetnetAPI)
 
+-   [practical assignment traffic](https://github.com/SPINLab/GI_Minor_2020/tree/master/py2_Traffic)
 
--   practical assignment py2 [py2 - Twitter API](https://github.com/SPINLab/GI_Minor_2020/tree/master/py2_TwitterAPI) - describes the Twitter API assignment + hints/tips/tricks about using the Twitter API.
+Furthermore we have a bonus practical assignment about how to extract location information from twitter
+-   [practical assignment twitter](https://github.com/SPINLab/GI_Minor_2020/tree/master/py2_TwitterAPI)
 
-You can download the accompanying Python scripts as follows:
+For these practical assignments you can download the accompanying files as follows:
 
 1. scroll to the top of this page
 2. click on the green button labelled `Clone or download`

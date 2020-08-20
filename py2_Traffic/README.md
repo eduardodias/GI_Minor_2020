@@ -42,16 +42,18 @@ To get your data go to: https://dexter.ndwcloud.nu/opendata
 
 For the first excelsheet we want you to fill in "15-04-2019" for Begindatum (startdate) and "19-04-2019" for Einddatum (Enddate). Select you measureng stations by clicking on "Locatieselectie aanpassen" go to "Klembord" and paste the following in "Selectie uit klembord":
 
-1 RWS01_MONIBAS_0100vwb0183ra
-2 RWS01_MONIBAS_0100vwb0199ra
-3 RWS01_MONIBAS_0100vwc0175ra
-4 RWS01_MONIBAS_0101hrl0160ra
-5 RWS01_MONIBAS_0101hrl0166ra
-6 RWS01_MONIBAS_0101hrl0175ra
-7 RWS01_MONIBAS_0101hrl0186ra
-8 RWS01_MONIBAS_0101hrl0205ra
-9 RWS01_MONIBAS_0101hrr0171ra
-10 RWS01_MONIBAS_0101hrr0209ra
+```python
+RWS01_MONIBAS_0100vwb0183ra
+RWS01_MONIBAS_0100vwb0199ra
+RWS01_MONIBAS_0100vwc0175ra
+RWS01_MONIBAS_0101hrl0160ra
+RWS01_MONIBAS_0101hrl0166ra
+RWS01_MONIBAS_0101hrl0175ra
+RWS01_MONIBAS_0101hrl0186ra
+RWS01_MONIBAS_0101hrl0205ra
+RWS01_MONIBAS_0101hrr0171ra
+RWS01_MONIBAS_0101hrr0209ra
+```
 
 Now click on `+Toevoegen` and confirm by clicking on `Bevestigen`. For `Naam` 2019, fill in your email adress, check the `Ik ben geen robot` (I am not a robot) box and click at `Aanvraag starten`. Wait a bit and the download will be ready. 
 

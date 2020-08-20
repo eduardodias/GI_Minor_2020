@@ -15,20 +15,20 @@ This course is hands-on: **we don't have slides or extensive lecture notes;**. W
 ## Course overview
 
 -   Introduction to Python
--   Introduction to debugging
--   Getting help: introduction to StackOverflow and online documentation
 -   Introduction to API access using the requests module
--   Accessing the twitter API using the twython module
+-   Accessing air quality data and include in your GIS
+-   Accessing  (live) information about traffic and analyse the impact of traffic on air quality
 
 ## Methodology and programme
 
-This course consists of a self-learning part and two hands-on workshops. Each workshop lasts a full day. During these days (i.e. 17/09 and 18/09) we will be available from 11:00 - 12:45 and from 13:30 - 17:00 via zoom. Please leave your question in the chat. A link to our Zoom session can be found at Canvas. 
+This course consists of a self-learning part and two hands-on workshops. Each workshop lasts a full day. During these days (i.e. 14/09 and 15/09) we will be available from 11:00 - 12:45 and from 13:30 - 17:00 via zoom. Please leave your question in the chat. A link to our Zoom session can be found at Canvas. 
 
 The program is as follows:
 
--   self-study 
--   practical assignment py1 17/09 - using the Luchtmeetnet API, with the requests module
--   practical assignment py2 18/09 - using the Twitter API, with the twython module
+-   self-study (to be finished before th 14th of September)
+
+-   practical assignment py1 14/09/2020 - using the Luchtmeetnet API, with the requests module
+-   practical assignment py2 15/09/2020 - using the Twitter API, with the twython module
 
 Each practical assignment is accompanied by a short manual and some Python scripts, see the [lecture materials](https://github.com/SPINLab/gi-minor-python-course-2018#lecture-materials) section below for more information.
 

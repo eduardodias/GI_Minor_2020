@@ -4,7 +4,7 @@
 
 In the previous practical assignment you have learned how to get data from air measurement stations. For this practical assignment we are going to combine data about the air quality and combine is with traffcic data. We want you to look at a couple of measurement stations and see whether you can find a relationship between the number of cars and the air quality. 
 
-##Trafic data
+## Traffic data
 
 Information about traffic can be obtained from different sources. Many of this data is not available as open data. You will often need to sign an agreement or buy a licence. Whenever you have such an agreement you will often get a api_key which you need to include in your script and provides access to the API in the same way as Luchtmeetnet. For many of these data sources you can create a free account which offer limited but still very useful functionalities. Good platform that you could use to get traffic information from are:
 

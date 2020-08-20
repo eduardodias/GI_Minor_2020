@@ -36,6 +36,26 @@ However, since pandas is very commonly used it is very likely you already instal
 
 # Practical Assignment
 
+In order to see the effect of traffic on the air quality we are going to compare the traffic and air quality measurements from April 2019 and April 2020 for the southern part of highway A10 near to the Vrije Universiteit. Since that Netherlands was in lockdown due to the COVID-19 virus in April 2020, we expect that there was less traffic which might have let to a better air quality. It is up to you to find out! 
+
+To get your data go to: https://dexter.ndwcloud.nu/opendata
+
+For the first excelsheet we want you to fill in "15-04-2019" for Begindatum (startdate) and "19-04-2019" for Einddatum (Enddate). Select you measureng stations by clicking on "Locatieselectie aanpassen" go to "Klembord" and paste the following in "Selectie uit klembord":
+
+`RWS01_MONIBAS_0100vwb0183ra
+RWS01_MONIBAS_0100vwb0199ra
+RWS01_MONIBAS_0100vwc0175ra
+RWS01_MONIBAS_0101hrl0160ra
+RWS01_MONIBAS_0101hrl0166ra
+RWS01_MONIBAS_0101hrl0175ra
+RWS01_MONIBAS_0101hrl0186ra
+RWS01_MONIBAS_0101hrl0205ra
+RWS01_MONIBAS_0101hrr0171ra
+RWS01_MONIBAS_0101hrr0209ra`
+
+Now click on `+Toevoegen` and confirm by clicking on `Bevestigen`. For `Naam` 2019, fill in your email adress, check the `Ik ben geen robot` (I am not a robot) box and click at `Aanvraag starten`. Wait a bit and the download will be ready. 
+
+Once you downloaded the 2019 sheet go to the proces a second time (you might have to refresh by pressing `F5`) but now change the Begindatum to "13-04-2020" and the Einddatum to "17-04-2020" and fill in for name "2020". 
 
 
 https://pandas.pydata.org/pandas-docs/stable/getting_started/intro_tutorials/02_read_write.html#min-tut-02-read-write

@@ -49,9 +49,11 @@ A more text book like format with a more in depth explanation can be accessed he
 
 ## Practical assignment
 
-This python course has two practical assignments. Each assignment contains a short manual and one or more Python scripts.
+This python course has two mandatory practical assignments. Each assignment contains a short manual and one or more Python scripts.
 
--   practical assignment py1 [py1 - Luchtmeetnet API](https://github.com/SPINLab/GI_Minor_2020/tree/master/py1_LuchtmeetnetAPI) - describes the Amsterdam API assignment + hints/tips/tricks about using an API.
+-   [practical assignment luchtmeetnet](https://github.com/SPINLab/GI_Minor_2020/tree/master/py1_LuchtmeetnetAPI) - describes the Amsterdam API assignment + hints/tips/tricks about using an API.
+
+
 -   practical assignment py2 [py2 - Twitter API](https://github.com/SPINLab/GI_Minor_2020/tree/master/py2_TwitterAPI) - describes the Twitter API assignment + hints/tips/tricks about using the Twitter API.
 
 You can download the accompanying Python scripts as follows:
@@ -77,12 +79,6 @@ You can install Anaconda and the needed modules as follows:
 
     press `Enter` to execute it.
 
--   Install the `twython` module: open a Anaconda prompt (`Start Menu` -> `Anaconda` -> `Anaconda Prompt`) and enter the following command:
-
-    `conda install twython`
-
-    press `Enter` to execute it.
-
 -   If you ever want to install other modules just Google `conda *module name*` and look for the result (with `Anaconda Cloud` in the title) with the latest version available for your platform. Copy the text under `To install this package with conda run one of the following:` and enter this command in the Anaconda prompt.
 
 Test if everything works:
@@ -94,7 +90,6 @@ Python 3:
 
 ```python
 import geopandas
-import twython
 
 print('Everything works!')
 ```
@@ -106,10 +101,10 @@ print('Everything works!')
 
 
 ## The team
+-   Maurice de Kleijn
+-	Devi Brands
+-	Dewi Westra
 
--   Eduardo Dias
+## Previous contributors
 -   Simeon Nedkov
 -   Chris Lucas
--	Dewi Westra
--	Devi Brands
--   Maurice de Kleijn

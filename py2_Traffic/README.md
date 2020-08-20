@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In the previous practical assignment you have learned how to get data from air measurement stations. For this practical assignment we are going to combine data about the air quality and combine is with traffcic data. We want you to look at a couple of measurement stations and see whether you can find a relationship between the number of cars and the air quality. 
+In the previous practical assignment you have learned how to get data from air measurement stations. For this practical assignment we are going to combine data about the air quality with traffcic data. We want you to look at a couple of measurement stations and see whether you can find a relationship between the number of cars and the air quality. But let us first have a look at available traffic data.  
 
 ## Traffic data
 
@@ -23,9 +23,22 @@ https://dexter.ndwcloud.nu/opendata
 This tool is limited to 10 stations per download, so whenever you are interested in a small area this can be very useful. The excelsheet is however not structured in the way that you can easily use it in a GIS. For this practical assignment it is your task to convert the data into usable GIS data. Some steps could have easily been done manually as well, but imagine you would want to include multiple time series in your analysis. Not only would it be very error sensitive to manually convert all data, it would also be very labor intensive.
 
 ## Python to read and write Excel files
+One of the main purposes for which you will use python is to preprocess you data before performing an analysis. A huge advantage of scripting data processing steps is that it remains transparant what you exactly did, thus reproducable by other researcher. There are multiple modules that allow you to proces (read and write) data from excel sheets. The most popular is [pandas](https://pandas.pydata.org/pandas-docs/stable/index.html), but older alternatives like [openpyxl](https://openpyxl.readthedocs.io/en/stable/) or [xlrd](https://xlrd.readthedocs.io/en/latest/) are still useful. For this practical assignment we want you to work with [pandas](https://pandas.pydata.org/pandas-docs/stable/index.html).
 
-There are multiple 
+To install the `pandas` module open a Anaconda prompt (`Start Menu` -> `Anaconda` -> `Anaconda Prompt`) in administrator mode (right click -> More -> Run as administrator) and enter the following command:
 
+    `conda install pandas`
+
+    press `Enter` to execute it.
+
+However, since pandas is very commonly used it is very likely you already installed it or that is was automatically installed when you installed Anaconda.
+
+
+# Practical Assignment
+
+
+
+https://pandas.pydata.org/pandas-docs/stable/getting_started/intro_tutorials/02_read_write.html#min-tut-02-read-write
 
 
 

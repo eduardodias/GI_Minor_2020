@@ -6,7 +6,7 @@ import requests
 # Go to https://documenter.getpostman.com/view/1562017/RVnbBxf9 and search for the suitable URL and request the data using requests.
 
 
-# In order to access the various data nodes we are going to create a python dictionary from the response. 
+# In order to access the various data nodes we are going to create a python dictionary from the response by reading the json API output. 
 
 
 

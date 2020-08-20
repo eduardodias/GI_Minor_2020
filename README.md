@@ -17,7 +17,7 @@ This course is hands-on: **we don't have slides or extensive lecture notes;**. W
 -   Introduction to Python
 -   Introduction to API access using the requests module
 -   Accessing air quality data and include in your GIS
--   Accessing  (live) information about traffic and analyse the impact of traffic on air quality
+-   Downloading information about traffic preprocess data for an analysis on the impact of traffic on air quality
 
 ## Methodology and programme
 
@@ -27,10 +27,10 @@ The program is as follows:
 
 -   self-study (to be finished before th 14th of September)
 
--   practical assignment py1 14/09/2020 - using the Luchtmeetnet API, with the requests module
--   practical assignment py2 15/09/2020 - Combining air quality data with traffic data
+-   [practical assignment py1](https://github.com/SPINLab/GI_Minor_2020/tree/master/py1_LuchtmeetnetAPI) 14/09/2020 - using the Luchtmeetnet API, with the requests module
+-   [practical assignment py2](https://github.com/SPINLab/GI_Minor_2020/tree/master/py2_Traffic) 15/09/2020 - Combining air quality data with traffic data
 
-Each practical assignment is accompanied by a short manual and some Python scripts, see the [lecture materials](https://github.com/SPINLab/gi-minor-python-course-2018#lecture-materials) section below for more information.
+Each practical assignment is accompanied by a short manual and some Python scripts.
 
 ## Self-study: 
 
@@ -54,9 +54,6 @@ This python course has two mandatory practical assignments. Each assignment cont
 -   [practical assignment luchtmeetnet](https://github.com/SPINLab/GI_Minor_2020/tree/master/py1_LuchtmeetnetAPI)
 
 -   [practical assignment traffic](https://github.com/SPINLab/GI_Minor_2020/tree/master/py2_Traffic)
-
-Furthermore we have a bonus practical assignment about how to extract location information from twitter
--   [practical assignment twitter](https://github.com/SPINLab/GI_Minor_2020/tree/master/py2_TwitterAPI)
 
 For these practical assignments you can download the accompanying files as follows:
 
@@ -100,6 +97,10 @@ print('Everything works!')
 -   run the code: `Run` -> `Run`
 -   do you see `Everything works!` in the output screen? Great, you're all set!
 -   do you see something else? Too bad, something's wrong. Please copy/paste the output in the issue tracker (see below for instructions) and we'll try to assist you.
+
+## BONUS Practical Assignment
+We have one bonus practical assignment which we used in previous years about how to extract location information of tweets from twitter. If you want you are interested you can make it
+-   [practical assignment twitter](https://github.com/SPINLab/GI_Minor_2020/tree/master/py3_TwitterAPI)
 
 
 ## The team

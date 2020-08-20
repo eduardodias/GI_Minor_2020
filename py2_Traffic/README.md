@@ -57,7 +57,7 @@ RWS01_MONIBAS_0101hrr0209ra
 
 Now click on `+Toevoegen` and confirm by clicking on `Bevestigen`. For `Naam` `2019`, fill in your email adress, check the `Ik ben geen robot` (I am not a robot) box and click at `Aanvraag starten`. Wait a bit and the download will be ready. 
 
-Once you downloaded the 2019 sheet go to the proces a second time (you might have to refresh by pressing `F5`) but now change the Begindatum to `13-04-2020` and the `Einddatum` to `17-04-2020` and fill in for `Name` `2020`. 
+Once you downloaded the 2019 sheet go to the proces a second time (you might have to refresh by pressing `F5`) but now change the `Begindatum` to `13-04-2020` and the `Einddatum` to `17-04-2020` and fill in for `Name` `2020`. 
 
 
 

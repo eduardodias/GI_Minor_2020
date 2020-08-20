@@ -28,7 +28,7 @@ The program is as follows:
 -   self-study (to be finished before th 14th of September)
 
 -   practical assignment py1 14/09/2020 - using the Luchtmeetnet API, with the requests module
--   practical assignment py2 15/09/2020 - using the Twitter API, with the twython module
+-   practical assignment py2 15/09/2020 - Combining air quality data with traffic data
 
 Each practical assignment is accompanied by a short manual and some Python scripts, see the [lecture materials](https://github.com/SPINLab/gi-minor-python-course-2018#lecture-materials) section below for more information.
 

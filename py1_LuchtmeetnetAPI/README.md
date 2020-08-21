@@ -1,4 +1,4 @@
-# Practical Assignment 1 - py1 Luchtmeetnet API 
+# Practical Assignment 1 - py1 Air Quality - API 
 
 ## Introduction
 A recent study of SPINlab researcher [Dr. Bo Andrée](https://research.vu.nl/en/persons/bo-pieter-johannes-andree) showed a relationship between air pollution and confirmed COVID-19 cases. He concluded that a high level of Particulate Matter with a diameter of 2.5 μm or less per m3 is a highly significant predictor for the number of confirmed COVID-19 cases and related hospital admissions. Why this is the case is still unclear. The two most accepted theories are however that either people living in areas with high levels of air pollution already have lung damage due to the pollution, or that the virus latches on aerosols in the air which speeds up the spread of the virus. Either way are the results of this study important in controlling the spread of the virus. It shows that more and or different measures might have to be taken to protect people that live in areas with high levels of air pollution.

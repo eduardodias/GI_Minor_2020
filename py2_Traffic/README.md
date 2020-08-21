@@ -82,7 +82,7 @@ For this practical assignment we want you to create a shapefile `traffic_april_1
 
 Not it is up to you to do this. Go through the documentation of [pandas] and in particular have a look at this [tutorial](https://pandas.pydata.org/pandas-docs/stable/getting_started/intro_tutorials/02_read_write.html#min-tut-02-read-write) . In order to export the data as a shapefile have a look at the previous assignment and geopandas.
 
-To help you a bit we have prepared [py2_traffic.py](URL) in which we included some tips on how to create your script. 
+To help you a bit we have prepared [py2_traffic.py](https://github.com/SPINLab/GI_Minor_2020/blob/master/py2_Traffic/py2_traffic.py) in which we included some tips on how to create your script. 
 
 ## Air Quality data
 

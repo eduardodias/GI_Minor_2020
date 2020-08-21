@@ -38,6 +38,7 @@ However, since pandas is very commonly used it is very likely you already instal
 
 In order to see the effect of traffic on the air quality we are going to compare the traffic and air quality measurements from April 2019 and April 2020 for the southern part of highway A10 near to the Vrije Universiteit. Since that Netherlands was in lockdown due to the COVID-19 virus in April 2020, we expect that there was less traffic which might have let to a better air quality. It is up to you to find out! 
 
+##Traffic data
 To get your data go to: https://dexter.ndwcloud.nu/opendata
 
 For the first excelsheet we want you to fill in `15-04-2019` for `Begindatum` (startdate) and `19-04-2019` for `Einddatum` (Enddate). Select you measureng stations by clicking on `Locatieselectie aanpassen` go to `Klembord` and paste the following in `Selectie uit klembord`:
@@ -69,20 +70,24 @@ For this practical assignment we want you to create a table as .csv with the fol
 | RWS01_MONIBAS_0100vwb0199ra | 52.3389098| 4.8604215 |  20715.5 | 9487.2 |
 | ... | ... | ... | ... | ... |
 
-`ID` represents the unique ID of the sensor and can be found on either the `2019.xlsx`or `2020.xlsx` excel files on sheet `overzicht` cells `B7:B16` this collumn must be stored as string / text.
-`X_Coord` represents the Longitude of the sensor and can be found either the `2019.xlsx`or `2020.xlsx` excel files on sheet `overzicht` cells `D7:D16`. This collumn must be stored as float or double in order for your GIS to be recognized as number.
-`Y_Coord` represents the Latitude of the sensor and can be found either the `2019.xlsx`or `2020.xlsx` excel files on sheet `overzicht` cells `E7:E16`. This collumn must be stored as float or double in order for your GIS to be recognized as number.
-`vehicles_2019` are the total number of cars that passed this sensor for the predefined period. These figures can be found in `2019.xlsx` on the `intensiteit` sheet in the different cells that provide `Totaal` under the collumn `intensiteit`. For sensor `RWS01_MONIBAS_0100vwb0183ra` this is cell B30 fo sensor `RWS01_MONIBAS_0100vwb0199ra` this is `B67` for `RWS01_MONIBAS_0100vwc0175ra` this is `B104` (do you see the pattern?).
-`vehicles_2020` are the total number of cars that passed this sensor for the predefined period. These figures can be found in `2020.xlsx` on the `intensiteit` sheet in the different cells that provide `Totaal` under the collumn `intensiteit`. For sensor `RWS01_MONIBAS_0100vwb0183ra` this is cell `B30` fo sensor `RWS01_MONIBAS_0100vwb0199ra` this is `B67` for `RWS01_MONIBAS_0100vwc0175ra` this is `B104` (do you see the pattern?).
+**ID** represents the unique ID of the sensor and can be found on either the `2019.xlsx`or `2020.xlsx` excel files on sheet `overzicht` cells `B7:B16` this collumn must be stored as string / text.
 
+**X_Coord** represents the Longitude of the sensor and can be found either the `2019.xlsx`or `2020.xlsx` excel files on sheet `overzicht` cells `D7:D16`. This collumn must be stored as float or double in order for your GIS to be recognized as number.
 
+**Y_Coord** represents the Latitude of the sensor and can be found either the `2019.xlsx`or `2020.xlsx` excel files on sheet `overzicht` cells `E7:E16`. This collumn must be stored as float or double in order for your GIS to be recognized as number.
 
+**vehicles_2019** are the total number of cars that passed this sensor for the predefined period. These figures can be found in `2019.xlsx` on the `intensiteit` sheet in the different cells that provide `Totaal` under the collumn `intensiteit`. For sensor `RWS01_MONIBAS_0100vwb0183ra` this is cell B30 fo sensor `RWS01_MONIBAS_0100vwb0199ra` this is `B67` for `RWS01_MONIBAS_0100vwc0175ra` this is `B104` (do you see the pattern?).
 
+**vehicles_2020** are the total number of cars that passed this sensor for the predefined period. These figures can be found in `2020.xlsx` on the `intensiteit` sheet in the different cells that provide `Totaal` under the collumn `intensiteit`. For sensor `RWS01_MONIBAS_0100vwb0183ra` this is cell `B30` fo sensor `RWS01_MONIBAS_0100vwb0199ra` this is `B67` for `RWS01_MONIBAS_0100vwc0175ra` this is `B104` (do you see the pattern?).
 
+Not it is up to you to do this. Go through the documentation of [pandas] and in particular have a look at this [tutorial](https://pandas.pydata.org/pandas-docs/stable/getting_started/intro_tutorials/02_read_write.html#min-tut-02-read-write) .
 
+To help you a bit we have prepared [traffic.py] in which we included some tips on how to create your script. 
 
+##Air Quality data
+In order to see which stations are near to traffic sensors we want you to add the traffic .csv to your GIS software ( resulting shapefile from the first practical assignment and 
+Once you created the table with the  add it to you GIS and 
 
-https://pandas.pydata.org/pandas-docs/stable/getting_started/intro_tutorials/02_read_write.html#min-tut-02-read-write
 
 
 

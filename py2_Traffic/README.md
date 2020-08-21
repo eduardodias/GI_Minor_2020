@@ -88,6 +88,8 @@ To help you a bit we have prepared [py2_traffic.py](URL) in which we included so
 
 In order to see which stations are near to the traffic sensors we want you to add the traffic shapefile and the measurement stations from the previous practical assignment to your GIS (if you want you can also done using buffer analysis using **arcpy** or **geopandas**, however let´s take it easy for the moment). Now select the ten air quality measurement stations which are nearest to the traffic sensors and modify your script from the previous assignment to get the data for the periods in **April 2019** and **April 2020** for which you generated the traffic dataset. Make sure to now also include average measurements for all other chemical components. 
 
+Name you this script: `py2_air_april_1920.py`. 
+
 Create a shapefile named `air_q_april_1920.shp` containing the following table structure.
 
 | ID_AQ | X_coord | Y_coord | PM25 | PM10 | NO | etc. | 
@@ -109,7 +111,7 @@ Create a .zip file containing the following files
 
 - `py2_traffic.py` which contains the script with which you modify the traffic data into a useable shapefile.
 - the generated shapefile `traffic_april_1920.shp`
-- the python script with which you created the new air quality subset
+- `py2_air_april_1920.py`
 - the generated shapefile `air_q_april_1920.shp`
 - `py2_answers.txt`
 

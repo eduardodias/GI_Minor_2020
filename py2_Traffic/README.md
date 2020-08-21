@@ -25,15 +25,6 @@ This tool is limited to 10 stations per download, so whenever you are interested
 ## Python to read and write Excel files
 One of the main purposes for which you will use python is to preprocess you data before performing an analysis. A huge advantage of scripting data processing steps is that it remains transparant what you exactly did, thus reproducable by other researcher. There are multiple modules that allow you to proces (read and write) data from excel sheets. The most popular is [pandas](https://pandas.pydata.org/pandas-docs/stable/index.html), but older alternatives like [openpyxl](https://openpyxl.readthedocs.io/en/stable/) or [xlrd](https://xlrd.readthedocs.io/en/latest/) are still useful. For this practical assignment we want you to work with [pandas](https://pandas.pydata.org/pandas-docs/stable/index.html).
 
-To install the `pandas` module open a Anaconda prompt (`Start Menu` -> `Anaconda` -> `Anaconda Prompt`) in administrator mode (right click -> More -> Run as administrator) and enter the following command:
-
-    `conda install pandas`
-
-    press `Enter` to execute it.
-
-However, since pandas is very commonly used it is very likely you already installed it or that is was automatically installed when you installed Anaconda.
-
-
 # Practical Assignment
 
 In order to see the effect of traffic on the air quality we are going to compare the traffic and air quality measurements from April 2019 and April 2020 for the southern part of highway A10 near to the Vrije Universiteit. Since that Netherlands was in lockdown due to the COVID-19 virus in April 2020, we expect that there was less traffic which might have let to a better air quality. It is up to you to find out! 

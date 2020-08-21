@@ -10,7 +10,7 @@ From previous iterations we've distilled that learning the basics isn't the chal
 
 Hence, we'll show you how to **apply your knowledge** to the challenges you'd like to **address day-to-day activities**. Along the way, we'll show you how to solve common Python-related problems, give you tips-and-tricks about finding help and expanding Python's capabilities with external modules. We expect you use this knowledge at a later stage of our course when you will have to work on the case-study. 
 
-This course is hands-on: **we don't have slides or extensive lecture notes;**. We will help you to make two assignments, however before that you will have to do some homework in order to get the basics of python. We expect you to have finished these tutorials before the 16th of September. 
+This course is hands-on: **we don't have slides or extensive lecture notes;**. We will help you to make two assignments, however before that you will have to do some homework in order to get the basics of python. We expect you to have finished these tutorials before the 14th of September. 
 
 ## Course overview
 

@@ -9,6 +9,7 @@ To access the full article follow this link and download the pdf: https://openkn
 For this study Andrée used spatial data about the average level of particulate matter per m3 in 2017 which he obtained from the "Atlas van de leefomgeving" - the atlas of the living environment [link](https://www.atlasleefomgeving.nl/kaarten). The data layers he used are: 
 - [Particulate Matter 2.5 μm or less per m3](https://nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/1689e358-6555-4b5d-902f-7bc36cf2c266) 
 - [Particulate Matter 10 μm or less per m3](https://nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/10b1f613-e492-44f6-9745-b444880c136b?tab=general)
+
 Both layers are the result of interpolated data points from measuring stations. A full description about how these data layers are modelled can be found [here](https://www.nsl-monitoring.nl/informatie/data-nsl/) (in Dutch). 
 In this practical assignment it is your task to collect data from air measuring stations and to see how these correspond with the modelled dataset used by Andrée. For this you are going to use the luchtmeetnet - Air measurement network. Luchtmeetnet is hosted by the Netherlands National Institute for Public Health and the Environment (or Rijksinstituut voor Volksgezondheid en Milieu (RIVM)) and contains information about air quality.
 ## About APIs 

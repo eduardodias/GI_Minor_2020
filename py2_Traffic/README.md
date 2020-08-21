@@ -38,7 +38,7 @@ However, since pandas is very commonly used it is very likely you already instal
 
 In order to see the effect of traffic on the air quality we are going to compare the traffic and air quality measurements from April 2019 and April 2020 for the southern part of highway A10 near to the Vrije Universiteit. Since that Netherlands was in lockdown due to the COVID-19 virus in April 2020, we expect that there was less traffic which might have let to a better air quality. It is up to you to find out! 
 
-##Traffic data
+## Traffic data
 To get your data go to: https://dexter.ndwcloud.nu/opendata
 
 For the first excelsheet we want you to fill in `15-04-2019` for `Begindatum` (startdate) and `19-04-2019` for `Einddatum` (Enddate). Select you measureng stations by clicking on `Locatieselectie aanpassen` go to `Klembord` and paste the following in `Selectie uit klembord`:
@@ -62,7 +62,7 @@ Once you downloaded the 2019 sheet go to the proces a second time (you might hav
 
 When you open the excel sheet you will notice that the data is structured, but not in a way is can easily be intgrated into your GIS. Restructuring the data can be done manually, but is error sensitive and not easily reproducable. Since you are trained as researchers we want you to not modify the downloaded data, but instead generate a new datafile without touching the orginal data. Whenever publishing a academic report you can accompany it with your data processing scripts (which most researchers currently publish on platforms like GIThub: the platform where this practical assignment is published on as well). 
 
-For this practical assignment we want you to create a table as .csv with the following collumns.
+For this practical assignment we want you to create a shapefile `traffic_april_1920.shp`file with the following collumns. 
 
 | ID | X_coord | Y_coord | vehicles_2019 | vehicles_2020 |
 | --------------- | --------------- | --------------- | --------------- | --------------- |
@@ -80,13 +80,34 @@ For this practical assignment we want you to create a table as .csv with the fol
 
 **vehicles_2020** are the total number of cars that passed this sensor for the predefined period. These figures can be found in `2020.xlsx` on the `intensiteit` sheet in the different cells that provide `Totaal` under the collumn `intensiteit`. For sensor `RWS01_MONIBAS_0100vwb0183ra` this is cell `B30` fo sensor `RWS01_MONIBAS_0100vwb0199ra` this is `B67` for `RWS01_MONIBAS_0100vwc0175ra` this is `B104` (do you see the pattern?).
 
-Not it is up to you to do this. Go through the documentation of [pandas] and in particular have a look at this [tutorial](https://pandas.pydata.org/pandas-docs/stable/getting_started/intro_tutorials/02_read_write.html#min-tut-02-read-write) .
+Not it is up to you to do this. Go through the documentation of [pandas] and in particular have a look at this [tutorial](https://pandas.pydata.org/pandas-docs/stable/getting_started/intro_tutorials/02_read_write.html#min-tut-02-read-write) . In order to export the data as a shapefile have a look at the previous assignment and geopandas.
 
-To help you a bit we have prepared [traffic.py] in which we included some tips on how to create your script. 
+To help you a bit we have prepared [py2_traffic.py](URL) in which we included some tips on how to create your script. 
 
-##Air Quality data
-In order to see which stations are near to traffic sensors we want you to add the traffic .csv to your GIS software ( resulting shapefile from the first practical assignment and 
-Once you created the table with the  add it to you GIS and 
+## Air Quality data
+
+In order to see which stations are near to the traffic sensors we want you to add the traffic shapefile and the measurement stations from the previous practical assignment to your GIS (if you want you can also done using buffer analysis using **arcpy** or **geopandas**, however let´s take it easy for the moment). Now select the ten air quality measurement stations which are nearest to the traffic sensors and modify your script from the previous assignment to get the data for the periods in **April 2019** and **April 2020** for which you generated the traffic dataset. Make sure to now also include average measurements for all other chemical components. 
+
+Create a shapefile named `air_q_april_1920.shp` containing the following table structure.
+
+| ID_AQ | X_coord | Y_coord | PM25 | PM10 | NO | etc. | 
+| --------------- | --------------- | --------------- | --------------- | --------------- | --------------- | --------------- |
+| ... | ... | ... | ... | ... |... | ... |
+
+## Comparing the Air Quality and Traffic
+Now that you created two shape files we want you to compare April 2019 with April 2020. Although various statistical methods exist and obviously interpolation and distance decay functionalities should be included to analyse this in a more robust academic manner, we want you to just explore the data and compare the figures visually. Answer the following questions:
+
+1. What do you see when you compare the air quality of April 2019 with April 2020.
+2. How would you interpret these results and what conclusions would you draw from your explorative analysis?
+3. What other information would you require to analyse the relationship between air quality and traffic?
+
+## Submit the following
+- `py2_traffic.py` which contains the script with which you modify the traffic data into a useable shapefile.
+- the generated shapefile `traffic_april_1920.shp`
+- the python script with which you created the new air quality subset
+- the generated shapefile `air_q_april_1920.shp`
+
+
 
 
 

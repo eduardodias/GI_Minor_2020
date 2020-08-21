@@ -104,9 +104,13 @@ Now that you created two shape files we want you to compare April 2019 with Apri
 Save your answers in a file named `py2_answers.txt`
 
 ## Submit the following
-Submit the following files to canvas
+
+Create a .zip file containing the following files 
+
 - `py2_traffic.py` which contains the script with which you modify the traffic data into a useable shapefile.
 - the generated shapefile `traffic_april_1920.shp`
 - the python script with which you created the new air quality subset
 - the generated shapefile `air_q_april_1920.shp`
 - `py2_answers.txt`
+
+Submit this zip to Canvas **before the 16th of September 23:59**. 

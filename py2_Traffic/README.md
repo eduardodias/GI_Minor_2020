@@ -63,11 +63,12 @@ When you open the excel sheet you will notice that the data is structured, but n
 
 For this practical assignment we want you to create a simple table as .csv with the following collumns.
 
-| ID | X_coord | Y_coord |
-| --------------- | --------------- | --------------- |
-| RWS01_MONIBAS_0100vwb0183ra | Row 1 Column 2 | Row 1 Column 3 |
-| RWS01_MONIBAS_0100vwb0199ra| Row 2 Column 2 | Row 2 Column 3 |
-| ... | Row 3 Column 2 | Row 3 Column 3 |
+| ID | X_coord | Y_coord | vehicles_2019 | vehicles_2020 |
+| --------------- | --------------- | --------------- | --------------- | --------------- |
+| RWS01_MONIBAS_0100vwb0183ra | 52.3396955| 4.8836328 |  13956.1 | 5816.5 |
+| RWS01_MONIBAS_0100vwb0199ra | 52.3389098| 4.8604215 |  20715.5 | 9487.2 |
+| ... | ... | ... | ... | ... |
+| ... | ... | ... | ... | ... |
 
 
 

@@ -98,23 +98,15 @@ Create a shapefile named `air_q_april_1920.shp` containing the following table s
 Now that you created two shape files we want you to compare April 2019 with April 2020. Although various statistical methods exist and obviously interpolation and distance decay functionalities should be included to analyse this in a more robust academic manner, we want you to just explore the data and compare the figures visually. Answer the following questions:
 
 1. What do you see when you compare the air quality of April 2019 with April 2020.
-2. How would you interpret these results and what conclusions would you draw from your explorative analysis?
+2. How would you interpret these results in relation to the amount of traffic? What conclusions would you draw from your explorative analysis?
 3. What other information would you require to analyse the relationship between air quality and traffic?
 
+Save your answers in a file named `py2_answers.txt`
+
 ## Submit the following
+Submit the following files to canvas
 - `py2_traffic.py` which contains the script with which you modify the traffic data into a useable shapefile.
 - the generated shapefile `traffic_april_1920.shp`
 - the python script with which you created the new air quality subset
 - the generated shapefile `air_q_april_1920.shp`
-
-
-
-
-
-
-
-
-
-
-
-
+- `py2_answers.txt`

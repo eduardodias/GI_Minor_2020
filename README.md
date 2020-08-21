@@ -34,14 +34,14 @@ Each practical assignment is accompanied by a short manual and some Python scrip
 
 ## Self-study: 
 
-To maximize the time available for the hands-on lectures and exercises we kindly ask you to complete a number Python lessons in advance **(BEFORE the 17th of September)**.
+To maximize the time available for the hands-on lectures and exercises we kindly ask you to complete a number Python lessons in advance **(BEFORE the 14th of September)**.
 
 There are multiple online tutorial to learn the basics of python. We give you a couple of options of which you can decide what works best for you. 
 
 **Option 1**
 [https://www.w3schools.com/python/default.asp](https://www.w3schools.com/python/default.asp) is an online learning platform that offers programming courses in a wide range of languages. You learn to program by typing and executing Python commands directly in your browser.
 
-Complete all exercises listed under **Python Tutorial** and **File Handling** before coming to class on the 17th of September.
+Complete all exercises listed under **Python Tutorial** and **File Handling** before coming to class on the 14th of September.
 
 **Option 2**
 A more text book like format with a more in depth explanation can be accessed here:

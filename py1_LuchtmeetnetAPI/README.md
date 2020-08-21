@@ -92,7 +92,7 @@ With the two exercises completed you are now ready for the practical assignment.
 
 Again have a look at the [Luchtmeetnet API documentation](https://documenter.getpostman.com/view/1562017/RVnbBxf9) and determine which data we need to request to make a map of all stations colored by the measurement of a particulate matter of 2.5 μm and 10 μm or less per m3. Now open Practical_assignment_1.py and create a python script which retrieves the average measurement data of PM 2.5 and PM 10 for 2017 for all of the Netherlands.
 
-The script will result in two shapefiles PM10.shp and PM25.shp containing the measurements of 2017. 
+The script will result in two shapefiles `PM10.shp` and `PM25.shp` containing the measurements of 2017. 
 
 Now go to https://www.atlasleefomgeving.nl/kaarten and download the PM 10 and PM 2.5 map data used by Andrée. Add the shape files you created and the downloaded data in a GIS (ArcGIS pro or QGIS) and systematically compare the data you retrieved from the luchtmeetnet API. Answer the following: 
    1. Which funtionalities in GIS have you used to compare the data point with the modelled raster layer?
@@ -101,4 +101,14 @@ Now go to https://www.atlasleefomgeving.nl/kaarten and download the PM 10 and PM
    4. Image that Andrée would have used the data from the Luchtmeetnet directly in the way you did. How do you think that would have changed his analysis?
    5. Now look back at the fit for purpose framework you developed for the first practical assignment. How fit would your generated point data be for the purpose of Andrée´s study? 
 
-Add your answers to `Practical_assignment_1.py` and upload this `.py` file together with the two shape files you created to canvas.
+Save your answers to a file named `py1_air_quality_answers.txt`.
+
+## Submit the following
+
+Create a .zip file containing the following files 
+- `Practical_assignment_1.py` 
+- `PM10.shp` and `PM25.shp` (with all auxiliary files; remember the Kenya practical assignment)
+- `py1_air_quality_answers.txt"
+
+Submit it to Canvas **before the 16th of September 18:00**. 
+

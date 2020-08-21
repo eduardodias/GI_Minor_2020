@@ -110,5 +110,5 @@ Create a .zip file containing the following files
 - `PM10.shp` and `PM25.shp` (with all auxiliary files; remember the Kenya practical assignment)
 - `py1_air_quality_answers.txt"
 
-Submit it to Canvas **before the 16th of September 18:00**. 
+Submit it to Canvas **before the 16th of September 23:59**. 
 

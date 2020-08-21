@@ -1,4 +1,4 @@
-## BONUS Practical Assingment 3 - Twitter API
+## BONUS Practical Assignment 3 - Twitter API
 
 <i>Please note that this is an bonus assignment for those who are interested to extract data from twitter. In previous years we had this assignment included. However, since Twitter has limited the possibilities of the free part of the API over the last years, we decided to leave this practical assignment. Please note that we have not maintained this assignment since September 2019. We can thus not promise that everything still works.</i> 
 

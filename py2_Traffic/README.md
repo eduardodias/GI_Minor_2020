@@ -59,6 +59,17 @@ Now click on `+Toevoegen` and confirm by clicking on `Bevestigen`. For `Naam` `2
 
 Once you downloaded the 2019 sheet go to the proces a second time (you might have to refresh by pressing `F5`) but now change the `Begindatum` to `13-04-2020` and the `Einddatum` to `17-04-2020` and fill in for `Name` `2020`. 
 
+When you open the excel sheet you will notice that the data is structured, but not in a way is can easily be intgrated into your GIS. Restructuring the data can be done manually, but is error sensitive and not easily reproducable. Since you are trained as researchers we want you to not modify the downloaded data, but instead generate a new datafile without touching the orginal data. Whenever publishing a academic report you can accompany it with your data processing scripts (which most researchers currently publish on platforms like GIThub: the platform where this practical assignment is published on as well). 
+
+For this practical assignment we want you to create a simple table as .csv with the following collumns.
+
+| Column 1 Header | Column 2 Header | Column 3 Header |
+| --------------- | --------------- | --------------- |
+| Row 1 Column 1 | Row 1 Column 2 | Row 1 Column 3 |
+| Row 2 Column 1 | Row 2 Column 2 | Row 2 Column 3 |
+| Row 3 Column 1 | Row 3 Column 2 | Row 3 Column 3 |
+
+
 
 
 

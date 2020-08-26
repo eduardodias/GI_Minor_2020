@@ -92,9 +92,9 @@ With the two exercises completed you are now ready for the practical assignment.
 
 Again have a look at the [Luchtmeetnet API documentation](https://documenter.getpostman.com/view/1562017/RVnbBxf9) and determine which data we need to request to make a map of all stations colored by the measurement of a particulate matter of 2.5 μm and 10 μm or less per m3. Now open Practical_assignment_1.py and create a python script which retrieves the average measurement data of PM 2.5 and PM 10 for 2017 for all of the Netherlands.
 
-The script will result in two shapefiles `PM10.shp` and `PM25.shp` containing the measurements of 2017. 
+The script you have to produce must result in a shapefile `measurements.shp`containing the average PM 2.5 and PM10 measurements for 2017.
 
-Now go to https://www.atlasleefomgeving.nl/kaarten and download the PM 10 and PM 2.5 map data used by Andrée. Add the shape files you created and the downloaded data in a GIS (ArcGIS pro or QGIS) and systematically compare the data you retrieved from the luchtmeetnet API. Answer the following: 
+Once you finished the script go to https://www.atlasleefomgeving.nl/kaarten and download the PM 10 and PM 2.5 map data used by Andrée. Add the shape files you created and the downloaded data in a GIS (ArcGIS pro or QGIS) and systematically compare the data you retrieved from the luchtmeetnet API. Answer the following: 
    1. Which funtionalities in GIS have you used to compare the data point with the modelled raster layer?
    2. Do the measurements from the Luchtmeetnet correspond with the datalayer PM 10 and PM 2.5 from the atlas van de leefomgeving?
    3. Do you think that the measurements from the Luchtmeetnet are sufficient as input for to generate the maps layers? 
@@ -107,8 +107,8 @@ Save your answers to a file named `py1_air_quality_answers.txt`.
 
 Create a .zip file containing the following files 
 - `Practical_assignment_1.py` 
-- `PM10.shp` and `PM25.shp` (with all auxiliary files; remember the Kenya practical assignment)
+- `measurements.shp` (with all auxiliary files; remember the Kenya practical assignment)
 - `py1_air_quality_answers.txt`
 
-Submit it to Canvas **before the 16th of September 23:59**. 
+Submit it to Canvas **before the 20th of September 23:59**. 
 

@@ -89,7 +89,7 @@ from shapely.geometry import Point
 
 # Step 10: Now save the list to a column in the GeoDataFrame
 # REMOVE THE HASHTAG IN THE NEXT LINE
-#gdf['value'] = #????
+#gdf['value'] = 
 
 
 

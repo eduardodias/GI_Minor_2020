@@ -1,5 +1,9 @@
-# This is Excercise 1 for the practical assignment to learn python for API´s prepared by the Spatial Information Laboratory - Vrije Universiteit Amsterdam
-###################
+###############################################################################################
+# This is Excercise 1 for the practical assignment to learn python for API´s                  #
+# prepared by the Spatial Information Laboratory - Vrije Universiteit Amsterdam               #
+# Simeon Nedkov, Chris Lucas, Maurice de Kleijn, Devi Brands                                  #
+###############################################################################################
+
 # Since we want to be able to get data out of the luchtmeetnet we first we import the request module (which we already did for you) 
 # documentation on the request module : http://docs.python-requests.org/en/master/
 

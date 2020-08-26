@@ -1,7 +1,7 @@
 ###############################################################################################
 # This is the auxiliary file for the practical assignment to learn python for API´s.          #
 # Prepared by the Spatial Information Laboratory - Vrije Universiteit Amsterdam               #
-# Simeon Nedkov, Chris Lucas, Maurice de Kleijn, Devi Brands                                  #
+# Maurice de Kleijn, Devi Brands                                                              #
 ###############################################################################################
 
 # For this assignment we do not provide as much hints compared to the previous ones. Now it is foremost up to you.

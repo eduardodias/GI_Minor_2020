@@ -2,11 +2,11 @@
 
 ## Introduction
 
-In the previous practical assignment you have learned how to get data from air measurement stations. For this practical assignment we are going to combine data about the air quality with traffcic data. We want you to look at a couple of measurement stations and see whether you can find a relationship between the number of cars and the air quality. But let us first have a look at available traffic data.  
+In the previous practical assignment you have learned how to get data from air measurement stations. For this practical assignment we are going to combine data about air quality with traffic data. We want you to look at a couple of measurement stations and see whether you can find a relationship between the number of cars and the air quality. But let us first have a look at available traffic data.  
 
 ## Traffic data
 
-Information about traffic can be obtained from different sources. Many of this data is not available as open data. You will often need to sign an agreement or buy a licence. Whenever you have such an agreement you will often get a api_key which you need to include in your script and provides access to the API in the same way as Luchtmeetnet. For many of these data sources you can create a free account which offer limited but still very useful functionalities. Good platform that you could use to get traffic information from are:
+Information about traffic can be obtained from different sources. Much of this data is not available as open data. You will often need to sign an agreement or buy a licence. Whenever you have such an agreement you will often get an api_key which you need to include in your script and which provides access to the API in the same way as with Luchtmeetnet. For many of these data sources you can create a free account which offers limited but still very useful functionalities. Good platforms that you could use to get traffic information from are:
 
  - [HERE](https://www.developer.here.com/documentation/traffic/dev_guide/topics/what-is.html) 
  - [TOMTOM](https://developer.tomtom.com/)
@@ -16,7 +16,7 @@ And remember, these APIs have a lot of data. They have live data and historical 
 
 Information about traffic on the Dutch highways is available at the [National Data Warehouse for Traffic Information (NDW)](https://www.ndw.nu/en/). This data is not collected through users that use a certain app or that installed a certain sensor on their vehicle, but works the other way around. NDW data is foremost obtained through external sensors like cameras, rubber tubes or loop detectors. Like the data sources above also NDW is not fully open data. 
 
-They do offer a very useful open data tool with which you can generate an excel sheet with the number of vehicles for certain period. 
+They do offer a very useful open data tool with which you can generate an excel sheet with the number of vehicles for a certain period. 
 
 https://dexter.ndwcloud.nu/opendata
 

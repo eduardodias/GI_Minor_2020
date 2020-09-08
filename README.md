@@ -2,7 +2,7 @@
 
 Dear student,
 
-Welcome to the python part of the [Geo Information Minor](www.nationalegiminor.nl) organized by the Vrije Universiteit Amsterdam together with Utrecht University. In this course we'll take a small dive into the Python programming language. We'll cover some **basic programming concepts** and briefly delve into **data acquisition** by using API's.
+Welcome to the python part of the [Geo Information Minor](www.nationalegiminor.nl). In this course we'll take a small dive into the Python programming language. We'll cover some **basic programming concepts** and briefly delve into **data acquisition** by using API's.
 
 By the way: Did you know that the python programming language was developed in Amsterdam? Guido van Rossum, a researcher from the **Centrum voor Wiskunde en Informatica**, developed it in the 1990s. [https://en.wikipedia.org/wiki/Python_(programming_language)](https://en.wikipedia.org/wiki/Python_(programming_language))
 
@@ -115,7 +115,7 @@ We have one bonus practical assignment which we used in previous years about how
 -   [practical assignment twitter](https://github.com/SPINLab/GI_Minor_2020/tree/master/py3_TwitterAPI)
 
 
-## The team
+## The team - Vrije Universiteit Amsterdam
 -   Maurice de Kleijn
 -	Devi Brands
 -	Dewi Westra

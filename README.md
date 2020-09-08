@@ -47,6 +47,9 @@ Complete all exercises listed under **Python Tutorial** and **File Handling** be
 A more text book like format with a more in depth explanation can be accessed here:
 [https://greenteapress.com/wp/think-python-2e/](https://greenteapress.com/wp/think-python-2e/)
 
+**Option 3**
+A really good one is available at Codeacademy: https://www.codecademy.com/learn/learn-python-3 However, be aware that after a trial period you will need to pay for a subscription (it is definately worth it).
+
 ## Practical assignment
 
 This python course has two mandatory practical assignments. Each assignment contains a short manual and one or more Python scripts.

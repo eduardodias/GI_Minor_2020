@@ -10,7 +10,7 @@ From previous iterations we've distilled that learning the basics isn't the chal
 
 Hence, we'll show you how to **apply your knowledge** to the challenges you'd like to **address day-to-day activities**. Along the way, we'll show you how to solve common Python-related problems, give you tips-and-tricks about finding help and expanding Python's capabilities with external modules. We expect you use this knowledge at a later stage of our course when you will have to work on the case-study. 
 
-This course is hands-on: **we don't have slides or extensive lecture notes;**. We will help you to make two assignments, however before that you will have to do some homework in order to get the basics of python. We expect you to have finished these tutorials before the 14th of September. 
+This course is hands-on. We therefore do not have slides or extensive lecture notes. We will help you to make two assignments, however before that you will have to do some homework in order to get the basics of python. We expect you to have finished these tutorials before the 14th of September. 
 
 ## Course overview
 
@@ -21,7 +21,7 @@ This course is hands-on: **we don't have slides or extensive lecture notes;**. W
 
 ## Methodology and programme
 
-This course consists of a self-learning part and two hands-on workshops. Each workshop lasts a full day. During these days (i.e. 14/09 and 15/09) we will be available from 11:00 - 12:45 and from 13:30 - 17:00 via zoom. Please leave your question in the chat. A link to our Zoom session can be found at Canvas. 
+This course consists of a self-learning part and two hands-on workshops. Each workshop lasts a full day. During these days (i.e. 14/09 and 15/09) we will be available from 11:00 - 12:45 and from 13:30 - 17:00 via zoom. We will split our group in various break out rooms, where you can ask us (Devi & Maurice) for help. But first discuss issues you have with your fellow students. 
 
 The program is as follows:
 
@@ -30,7 +30,7 @@ The program is as follows:
 -   [practical assignment py1](https://github.com/SPINLab/GI_Minor_2020/tree/master/py1_LuchtmeetnetAPI) 14/09/2020 - using the Luchtmeetnet API, with the requests module
 -   [practical assignment py2](https://github.com/SPINLab/GI_Minor_2020/tree/master/py2_Traffic) 15/09/2020 - Combining air quality data with traffic data
 
-Each practical assignment is accompanied by a short manual and some Python scripts.
+Each practical assignment is accompanied by a short manual and some Python scripts. The first practical assignment includes two exercises as well. 
 
 ## Self-study: 
 

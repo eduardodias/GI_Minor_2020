@@ -103,7 +103,7 @@ print('Everything works!')
 -   do you see `Everything works!` in the output screen? Great, you're all set!
 
 ## BONUS Practical Assignment
-We have one bonus practical assignment which we used in previous years about how to extract location information of tweets from twitter. If you want you are interested you can make it
+We have a bonus practical assignment which we used in previous years. It might be interesting for the case study or research assignment which you will be making lateron in our minor. This assignments learn you how to extract location information of tweets from twitter.
 -   [practical assignment twitter](https://github.com/SPINLab/GI_Minor_2020/tree/master/py3_TwitterAPI)
 
 

@@ -12,13 +12,6 @@ Hence, we'll show you how to **apply your knowledge** to the challenges you'd li
 
 This course is hands-on. We therefore do not have slides or extensive lecture notes. We will help you to make two assignments, however before that you will have to do some homework in order to get the basics of python. We expect you to have finished these tutorials before the 14th of September. 
 
-## Course overview
-
--   Introduction to Python
--   Introduction to API access using the requests module
--   Accessing air quality data and include in your GIS
--   Downloading information about traffic preprocess data for an analysis on the impact of traffic on air quality
-
 ## Methodology and programme
 
 This course consists of a self-learning part and two hands-on workshops. Each workshop lasts a full day. During these days (i.e. 14/09 and 15/09) we will be available from 11:00 - 12:45 and from 13:30 - 17:00 via zoom. We will split our group in various break out rooms, where you can ask us (Devi & Maurice) for help. But first discuss issues you have with your fellow students. 

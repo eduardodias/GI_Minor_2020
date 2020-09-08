@@ -107,7 +107,7 @@ We have a bonus practical assignment which we used in previous years. It might b
 -   [practical assignment twitter](https://github.com/SPINLab/GI_Minor_2020/tree/master/py3_TwitterAPI)
 
 
-## The team - Vrije Universiteit Amsterdam
+## The Team - Vrije Universiteit Amsterdam
 -   Maurice de Kleijn
 -	Devi Brands
 -	Dewi Westra

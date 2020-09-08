@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In the previous practical assignment you have learned how to get data from air measurement stations. For this practical assignment we are going to combine data about air quality with traffic data. We want you to look at a two measurement stations and see whether you can find a relationship between the number of cars and the air quality, in partical nitrogen compounds (NO and NO2). But let us first have a look at available traffic data.  
+In the previous practical assignment you have learned how to get data from air measurement stations. For this practical assignment we are going to combine data about air quality with traffic data. We want you to look at a two measurement stations and see whether you can find a relationship between the number of cars and the air quality, in partical nitrogen compounds (NO and NO2). But let us first have a look at the traffic data.  
 
 ## Traffic data
 

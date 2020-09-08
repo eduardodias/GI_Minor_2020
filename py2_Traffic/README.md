@@ -83,7 +83,7 @@ Name your script: `py2_air_april_1920.py`.
 
 Create a shapefile named `air_q_april_1920.shp` containing the following table structure.
 
-| ID_AQ | X_coord | Y_coord | PM25 | PM10 | NO | etc. | 
+| ID_AQ | X_coord | Y_coord | 20_NO | 20_NO2 | 19_NO | 19_NO2 
 | --------------- | --------------- | --------------- | --------------- | --------------- | --------------- | --------------- |
 | ... | ... | ... | ... | ... |... | ... |
 

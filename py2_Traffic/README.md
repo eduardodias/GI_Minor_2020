@@ -12,7 +12,7 @@ Information about traffic can be obtained from different sources. Much of this d
  - [TOMTOM](https://developer.tomtom.com/)
  - [Flitsmeister](https://www.flitsmeister.nl/fcd.html) 
 
-And remember, these APIs have a lot of data. They have live data and historical datasets going back a couple of years. Working with these very large datasets is really considered Big Data analytics. Another thing that is interesting to notice is that the data these sources offer is obtained from the users that use their devices and apps. In some cases  such commerical parties thus know more about our traffic behaviour than the government. Interesting times, right?   
+And remember, these APIs have a lot of data. They have live data and historical data that go back a couple of years. Working with these very large datasets is genrally considered as Big Data analytics. Another thing that is interesting to notice is that the data these sources offer is obtained from the users that use their devices and apps. In some cases  such commerical parties thus know more about our traffic behaviour than the government. Interesting times, right?   
 
 Information about traffic on the Dutch highways is available at the [National Data Warehouse for Traffic Information (NDW)](https://www.ndw.nu/en/). This data is not collected through users that use a certain app or that installed a certain sensor on their vehicle, but works the other way around. NDW data is foremost obtained through external sensors like cameras, rubber tubes or loop detectors. Like the data sources above also NDW is not fully open data. 
 

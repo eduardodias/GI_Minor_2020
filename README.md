@@ -108,7 +108,6 @@ print('Everything works!')
 -   save the file: `File` -> `Save`
 -   run the code: `Run` -> `Run`
 -   do you see `Everything works!` in the output screen? Great, you're all set!
--   do you see something else? Too bad, something's wrong. Please copy/paste the output in the issue tracker (see below for instructions) and we'll try to assist you.
 
 ## BONUS Practical Assignment
 We have one bonus practical assignment which we used in previous years about how to extract location information of tweets from twitter. If you want you are interested you can make it

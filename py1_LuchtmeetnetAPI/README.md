@@ -20,6 +20,8 @@ As a data source for this practical assignment we are going to use the the Lucht
 
 https://api.luchtmeetnet.nl/open_api
 
+The RIVM also made an interactive mapviewer out of it. This can be accessed here: https://www.luchtmeetnet.nl/
+
 The documentation of this API can be found at https://documenter.getpostman.com/view/1562017/RVnbBxf9. 
 
 The techniques used in this exercise can also be used to download data from many more API's from other sources, since most API's follow a similar structure, which is called [REST](https://en.wikipedia.org/wiki/Representational_state_transfer).

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In the previous practical assignment you have learned how to get data from air measurement stations. For this practical assignment we are going to combine data about air quality with traffic data. We want you to look at a couple of measurement stations and see whether you can find a relationship between the number of cars and the air quality. But let us first have a look at available traffic data.  
+In the previous practical assignment you have learned how to get data from air measurement stations. For this practical assignment we are going to combine data about air quality with traffic data. We want you to look at a two measurement stations and see whether you can find a relationship between the number of cars and the air quality, in partical nitrogen compounds (NO and NO2). But let us first have a look at available traffic data.  
 
 ## Traffic data
 
@@ -27,7 +27,7 @@ One of the main purposes for which you will use python is to preprocess your dat
 
 # Practical Assignment
 
-In order to see the effect of traffic on air quality, we are going to compare the traffic and air quality measurements from April 2019 and April 2020 for the southern part of highway A10 near to the Vrije Universiteit. Since that Netherlands was in lockdown due to the COVID-19 virus in April 2020, we expect that there was less traffic which might have led to better air quality. It is up to you to find out! 
+In order to see the effect of traffic on air quality, we are going to compare the traffic and air quality measurements from April 2019 and April 2020 near the air quality measuring station alongside the Ring A10 at the `Einsteinweg` and alongside the highway A2 near `Breukelen`. The Netherlands was in lockdown due to the COVID-19 virus in April 2020, we therefore expect that there was less traffic which might have led to better air quality. It is up to you to find out! 
 
 ## Traffic data
 To get your data go to: https://dexter.ndwcloud.nu/opendata
@@ -35,16 +35,14 @@ To get your data go to: https://dexter.ndwcloud.nu/opendata
 For the first excelsheet we want you to fill in `15-04-2019` for `Begindatum` (startdate) and `19-04-2019` for `Einddatum` (Enddate). Select you measuring stations by clicking on `Locatieselectie aanpassen` go to `Klembord` and paste the following in `Selectie uit klembord`:
 
 ```python
-RWS01_MONIBAS_0100vwb0183ra
-RWS01_MONIBAS_0100vwb0199ra
-RWS01_MONIBAS_0100vwc0175ra
-RWS01_MONIBAS_0101hrl0160ra
-RWS01_MONIBAS_0101hrl0166ra
-RWS01_MONIBAS_0101hrl0175ra
-RWS01_MONIBAS_0101hrl0186ra
-RWS01_MONIBAS_0101hrl0205ra
-RWS01_MONIBAS_0101hrr0171ra
-RWS01_MONIBAS_0101hrr0209ra
+RWS01_MONIBAS_0021hrl0459ra
+RWS01_MONIBAS_0021hrl0469ra
+RWS01_MONIBAS_0021hrr0457ra
+RWS01_MONIBAS_0021hrr0469ra
+RWS01_MONIBAS_0101hrl0257ra
+RWS01_MONIBAS_0101hrl0261ra
+RWS01_MONIBAS_0101hrr0258ra
+RWS01_MONIBAS_0101hrr0261ra
 ```
 
 Now click on `+Toevoegen` and confirm by clicking on `Bevestigen`. For `Naam` `2019`, fill in your email adress, check the `Ik ben geen robot` (I am not a robot) box and click at `Aanvraag starten`. Wait a bit and the download will be ready. 
@@ -53,7 +51,7 @@ Once you downloaded the 2019 sheet go through the proces a second time (you migh
 
 When you open the excel sheet you will notice that the data is structured, but not in a way in which it can easily be intgrated into your GIS. Restructuring the data can be done manually, but is error sensitive and not easily reproducable. Since you are trained as researchers we want you to not modify the downloaded data, but instead generate a new datafile without touching the orginal data. Whenever publishing an academic report you can accompany it with your data processing scripts (which most researchers currently publish on platforms like GIThub, the platform where this practical assignment is published on as well). 
 
-For this practical assignment we want you to create a shapefile `traffic_april_1920.shp`file with the following collumns. 
+For this practical assignment we want you to create a shapefile `traffic_april_1920.shp`file with the following collumns (please note that the values in the table are made up). 
 
 | ID | X_coord | Y_coord | vehicles_2019 | vehicles_2020 |
 | --------------- | --------------- | --------------- | --------------- | --------------- |
@@ -67,9 +65,9 @@ For this practical assignment we want you to create a shapefile `traffic_april_1
 
 **Y_Coord** represents the Latitude of the sensor and can be found either the `2019.xlsx`or `2020.xlsx` excel files on sheet `overzicht` cells `E7:E16`. This collumn must be stored as float or double in order for your GIS to be recognized as number.
 
-**vehicles_2019** are the total number of cars that passed this sensor for the predefined period. These figures can be found in `2019.xlsx` on the `intensiteit` sheet in the different cells that provide `Totaal` under the collumn `intensiteit`. For sensor `RWS01_MONIBAS_0100vwb0183ra` this is cell B30 fo sensor `RWS01_MONIBAS_0100vwb0199ra` this is `B67` for `RWS01_MONIBAS_0100vwc0175ra` this is `B104` (do you see the pattern?).
+**vehicles_2019** are the total number of cars that passed this sensor for the predefined period. These figures can be found in `2019.xlsx` on the `intensiteit` sheet in the different cells that provide `Totaal` under the collumn `intensiteit`. For sensor `RWS01_MONIBAS_0021hrl0459ra` this is cell B30 fo sensor `RWS01_MONIBAS_0021hrl0469ra` this is `B67` for `RWS01_MONIBAS_0100vwc0175ra` this is `B104` (do you see the pattern?).
 
-**vehicles_2020** are the total number of cars that passed this sensor for the predefined period. These figures can be found in `2020.xlsx` on the `intensiteit` sheet in the different cells that provide `Totaal` under the collumn `intensiteit`. For sensor `RWS01_MONIBAS_0100vwb0183ra` this is cell `B30` fo sensor `RWS01_MONIBAS_0100vwb0199ra` this is `B67` for `RWS01_MONIBAS_0100vwc0175ra` this is `B104` (do you see the pattern?).
+**vehicles_2020** are the total number of cars that passed this sensor for the predefined period. These figures can be found in `2020.xlsx` on the `intensiteit` sheet in the different cells that provide `Totaal` under the collumn `intensiteit`. For sensor `RWS01_MONIBAS_0021hrl0459ra` this is cell B30 fo sensor `RWS01_MONIBAS_0021hrl0469ra` this is `B67` for `RWS01_MONIBAS_0100vwc0175ra` this is `B104` (do you see the pattern?).
 
 It is now up to you to do this. Go through the documentation of [pandas] and in particular have a look at this [tutorial](https://pandas.pydata.org/pandas-docs/stable/getting_started/intro_tutorials/02_read_write.html#min-tut-02-read-write) . In order to export the data as a shapefile, have a look at the previous assignment and geopandas.
 
@@ -77,18 +75,33 @@ To help you a bit, we have prepared [py2_traffic.py](https://github.com/SPINLab/
 
 ## Air Quality data MDK
 
-In order to see which stations are near to the traffic sensors, we want you to add the traffic shapefile and the measurement stations from the previous practical assignment to your GIS (if you want, you can also get it done using buffer analysis using **arcpy** or **geopandas**, however let´s take it easy for the moment). Now select the ten air quality measurement stations which are nearest to the traffic sensors and modify your script from the previous assignment to get the data for the periods in **April 2019** and **April 2020** for which you generated the traffic dataset. Make sure to now also include average measurements for all other chemical components. 
+In order to see which stations are near to the traffic sensors, we want you to add the traffic shapefile and the measurement stations from the previous practical assignment to your GIS (if you want, you can also get it done using buffer analysis using **arcpy** or **geopandas**, however let´s take it easy for the moment). We are going to focus at nitrogen compounds for which we will focus at NO and NO2. Now select the air quality measurement stations `Amsterdam- Einsteinweg` and `Breukelen-A2` and modify the script from the previous assignment to get the data for the periods in **April 2019** and **April 2020**. Make sure to include average measurements for NO and NO2. 
 
 Name your script: `py2_air_april_1920.py`. 
 
 Create a shapefile named `air_q_april_1920.shp` containing the following table structure.
 
-| ID_AQ | X_coord | Y_coord | 20_NO | 20_NO2 | 19_NO | 19_NO2 
+| ID_AQ | X_coord | Y_coord | 19_NO | 19_NO2 | 20_NO | 20_NO2 
 | --------------- | --------------- | --------------- | --------------- | --------------- | --------------- | --------------- |
 | ... | ... | ... | ... | ... |... | ... |
 
+**ID_AW** represents the unique ID of the Air Quality station. This collumn should be stored as string / text.
+
+**X_Coord** represents the Longitude of the measuring station.
+
+**Y_Coord** represents the Latitude of the measuring station.
+
+**19_NO** should contain the average measurements for NO in April 2019 (15/4 - 19/4): stored as a number (float).
+
+**19_NO2** should contain the average measurements for NO2 in April 2019 (15/4 - 19/4): stored as a number (float).
+
+**20_NO** should contain the average measurements for NO in April 2020 (13/4 - 17/4): stored as a number (float).
+
+**20_NO2** should contain the average measurements for NO2 in April 2020 (13/4 - 17/4): stored as a number (float).
+
+
 ## Comparing the Air Quality and Traffic
-Now that you created two shape files we want you to compare April 2019 with April 2020. Although various statistical methods exist and obviously interpolation and distance decay functionalities should be included to analyse this in a more robust academic manner, we want you to just explore the data and compare the figures visually. Answer the following questions:
+Now that you created two shape files we want you to compare April 2019 with April 2020. Although various statistical methods exist and obviously interpolation and distance decay functionalities should be included to analyse this in a more robust academic manner, for this assignment we want you to just explore the data and compare the figures visually. Answer the following questions:
 
 1. What do you see when you compare the air quality of April 2019 with April 2020.
 2. How would you interpret these results in relation to the amount of traffic? What conclusions would you draw from your explorative analysis?

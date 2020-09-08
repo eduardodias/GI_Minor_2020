@@ -75,7 +75,7 @@ To help you a bit, we have prepared [py2_traffic.py](https://github.com/SPINLab/
 
 ## Air Quality data
 
-In order to see which stations are near to the traffic sensors, we want you to add the traffic shapefile and the measurement stations from the previous practical assignment to your GIS (if you want, you can also get it done using buffer analysis using **arcpy** or **geopandas**, however let´s take it easy for the moment). We are going to focus at nitrogen compounds for which we will focus at NO and NO2. Now select the air quality measurement stations `Amsterdam- Einsteinweg` and `Breukelen-A2` and modify the script from the previous assignment to get the data for the periods in **April 2019** and **April 2020**. Make sure to include average measurements for NO and NO2. 
+In order to see which stations are near to the traffic sensors, we want you to add the traffic shapefile and the measurement stations from the previous practical assignment to your GIS (if you want, you can also get it done using buffer analysis using **arcpy** or **geopandas**, however let´s take it easy for the moment). We are going to focus at nitrogen compounds for which we will focus at NO and NO2. Now select the air quality measurement stations `Amsterdam-Einsteinweg` and `Breukelen-A2` and modify the script from the previous assignment to get the data for the periods in **April 2019** and **April 2020**. Make sure to include average measurements for NO and NO2. 
 
 Name your script: `py2_air_april_1920.py`. 
 

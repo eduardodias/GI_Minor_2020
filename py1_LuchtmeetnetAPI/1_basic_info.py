@@ -11,7 +11,7 @@ import requests
 
 
 # In order to understand how the luchtmeetnet API works, we want you to go through the following steps. 
-# Step 1: First we need to find the URL with which we can access the API and get to the different data nodes. Go to https://documenter.getpostman.com/view/1562017/RVnbBxf9 and search for the right URL.
+# Step 1: First we need to find the URL with which we can access the API and get to the different data nodes. Go to https://api-docs.luchtmeetnet.nl/#intro and search for the right URL.
 # Add this URL to a get request that you store as a response object. Put this request in the line below:
 
 
@@ -30,7 +30,7 @@ import requests
 
 # Now that we isolated one station we want you to get specific air quality measurements from that station. 
 # Step 5: In order to do so we want you to request the data of your chosen station and create a python dictionary.
-# Hint: you need to specify the station number in the URL. In order to see how that is done please check the API documentation (https://documenter.getpostman.com/view/1562017/RVnbBxf9) for an example.
+# Hint: you need to specify the station number in the URL. In order to see how that is done please check the API documentation (https://api-docs.luchtmeetnet.nl/#intro) for an example.
 # Now use the variable for the station number created in step 4.
 # Write your line(s) of code below:
 

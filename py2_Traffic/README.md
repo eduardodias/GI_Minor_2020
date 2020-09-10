@@ -51,7 +51,7 @@ Once you downloaded the 2019 sheet go through the proces a second time (you migh
 
 When you open the excel sheet you will notice that the data is structured, but not in a way in which it can easily be intgrated into your GIS. Restructuring the data can be done manually, but is error sensitive and not easily reproducable. Since you are trained as researchers we want you to not modify the downloaded data, but instead generate a new datafile without touching the orginal data. Whenever publishing an academic report you can accompany it with your data processing scripts (which most researchers currently publish on platforms like GIThub, the platform where this practical assignment is published on as well). 
 
-For this practical assignment we want you to create a shapefile `traffic_april_1920.shp`file with the following collumns (please note that the values in the table are made up). 
+For this practical assignment we want you to create a shapefile `traffic_april_1920.shp`file with the following columns (please note that the values in the table are made up). 
 
 | ID | X_coord | Y_coord | vehicles_2019 | vehicles_2020 |
 | --------------- | --------------- | --------------- | --------------- | --------------- |
@@ -59,15 +59,15 @@ For this practical assignment we want you to create a shapefile `traffic_april_1
 | RWS01_MONIBAS_0100vwb0199ra | 52.3389098| 4.8604215 |  20715.5 | 9487.2 |
 | ... | ... | ... | ... | ... |
 
-**ID** represents the unique ID of the sensor and can be found on either the `2019.xlsx`or `2020.xlsx` excel files on sheet `overzicht` cells `B7:B16` this collumn must be stored as string / text.
+**ID** represents the unique ID of the sensor and can be found on either the `2019.xlsx`or `2020.xlsx` excel files on sheet `overzicht` cells `B7:B16` this column must be stored as string / text.
 
-**X_Coord** represents the Longitude of the sensor and can be found either the `2019.xlsx`or `2020.xlsx` excel files on sheet `overzicht` cells `D7:D16`. This collumn must be stored as float or double in order for your GIS to be recognized as number.
+**X_Coord** represents the Longitude of the sensor and can be found either the `2019.xlsx`or `2020.xlsx` excel files on sheet `overzicht` cells `D7:D16`. This column must be stored as float or double in order for your GIS to be recognized as number.
 
-**Y_Coord** represents the Latitude of the sensor and can be found either the `2019.xlsx`or `2020.xlsx` excel files on sheet `overzicht` cells `E7:E16`. This collumn must be stored as float or double in order for your GIS to be recognized as number.
+**Y_Coord** represents the Latitude of the sensor and can be found either the `2019.xlsx`or `2020.xlsx` excel files on sheet `overzicht` cells `E7:E16`. This column must be stored as float or double in order for your GIS to be recognized as number.
 
-**vehicles_2019** are the total number of cars that passed this sensor for the predefined period. These figures can be found in `2019.xlsx` on the `intensiteit` sheet in the different cells that provide `Totaal` under the collumn `intensiteit`. For sensor `RWS01_MONIBAS_0021hrl0459ra` this is cell B30 fo sensor `RWS01_MONIBAS_0021hrl0469ra` this is `B67` for `RWS01_MONIBAS_0100vwc0175ra` this is `B104` (do you see the pattern?).
+**vehicles_2019** are the total number of cars that passed this sensor for the predefined period. These figures can be found in `2019.xlsx` on the `intensiteit` sheet in the different cells that provide `Totaal` under the column `intensiteit`. For sensor `RWS01_MONIBAS_0021hrl0459ra` this is cell B30 fo sensor `RWS01_MONIBAS_0021hrl0469ra` this is `B67` for `RWS01_MONIBAS_0100vwc0175ra` this is `B104` (do you see the pattern?).
 
-**vehicles_2020** are the total number of cars that passed this sensor for the predefined period. These figures can be found in `2020.xlsx` on the `intensiteit` sheet in the different cells that provide `Totaal` under the collumn `intensiteit`. For sensor `RWS01_MONIBAS_0021hrl0459ra` this is cell B30 fo sensor `RWS01_MONIBAS_0021hrl0469ra` this is `B67` for `RWS01_MONIBAS_0100vwc0175ra` this is `B104` (do you see the pattern?).
+**vehicles_2020** are the total number of cars that passed this sensor for the predefined period. These figures can be found in `2020.xlsx` on the `intensiteit` sheet in the different cells that provide `Totaal` under the column `intensiteit`. For sensor `RWS01_MONIBAS_0021hrl0459ra` this is cell B30 fo sensor `RWS01_MONIBAS_0021hrl0469ra` this is `B67` for `RWS01_MONIBAS_0100vwc0175ra` this is `B104` (do you see the pattern?).
 
 It is now up to you to do this. Go through the documentation of [pandas] and in particular have a look at this [tutorial](https://pandas.pydata.org/pandas-docs/stable/getting_started/intro_tutorials/02_read_write.html#min-tut-02-read-write) . In order to export the data as a shapefile, have a look at the previous assignment and geopandas.
 
@@ -85,7 +85,7 @@ Create a shapefile named `air_q_april_1920.shp` containing the following table s
 | --------------- | --------------- | --------------- | --------------- | --------------- | --------------- | --------------- |
 | ... | ... | ... | ... | ... |... | ... |
 
-**ID_AW** represents the unique ID of the Air Quality station. This collumn should be stored as string / text.
+**ID_AW** represents the unique ID of the Air Quality station. This column should be stored as string / text.
 
 **X_Coord** represents the Longitude of the measuring station.
 

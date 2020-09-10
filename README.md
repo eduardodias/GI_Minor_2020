@@ -8,7 +8,7 @@ By the way: Did you know that the python programming language was developed in A
 
 From previous iterations we've distilled that learning the basics isn't the challenge (anymore) due to the abundance of open online courses and interactive online tutorials. **Rather, the question is: how do I craft useful scripts that solve real-world problems?**
 
-Hence, we'll show you how to **apply your knowledge** to the challenges you'd like to **address day-to-day activities**. Along the way, we'll show you how to solve common Python-related problems, give you tips-and-tricks about finding help and expanding Python's capabilities with external modules. We expect you use this knowledge at a later stage of our course when you will have to work on the case-study. 
+Hence, we'll show you how to **apply your knowledge** to the challenges you'd like to **address day-to-day activities**. Along the way, we'll show you how to solve common Python-related problems, give you tips-and-tricks about finding help and expanding Python's capabilities with external modules. We expect you'll use this knowledge at a later stage of our course when you will have to work on the case-study. 
 
 This course is hands-on. We therefore do not have slides or extensive lecture notes. We will help you to make two assignments, however before that you will have to do some homework in order to get the basics of python. We expect you to have finished these tutorials before the 14th of September. 
 
@@ -27,9 +27,9 @@ Each practical assignment is accompanied by a short manual and some Python scrip
 
 ## Self-study: 
 
-To maximize the time available for the hands-on lectures and exercises we kindly ask you to complete a number Python lessons in advance **(BEFORE the 14th of September)**.
+To maximize the time available for the hands-on lectures and exercises we kindly ask you to complete a number of Python lessons in advance **(BEFORE the 14th of September)**.
 
-There are multiple online tutorial to learn the basics of python. We give you a couple of options of which you can decide what works best for you. 
+There are multiple online tutorials to learn the basics of python. We give you a couple of options from which you can decide what works best for you. 
 
 **Option 1**
 [https://www.w3schools.com/python/default.asp](https://www.w3schools.com/python/default.asp) is an online learning platform that offers programming courses in a wide range of languages. You learn to program by typing and executing Python commands directly in your browser.

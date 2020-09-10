@@ -28,7 +28,7 @@ from shapely.geometry import Point
 
 
 # STEP 3: To retrieve data from all stations we need to get all the station numbers.
-# In the API documentation (https://documenter.getpostman.com/view/1562017/RVnbBxf9) find the URL to retrieve station numbers.
+# In the API documentation (https://api-docs.luchtmeetnet.nl/#intro) find the URL to retrieve station numbers.
 # Check how many pages there are and create a loop which goes from 1 to the total number of pages.
 # Inside the loop retrieve the stations data of that page.
 # Loop over that data.

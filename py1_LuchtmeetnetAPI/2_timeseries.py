@@ -21,7 +21,7 @@ import matplotlib.pyplot as plt
 # Create a dictionary of the response in the same way you did in the previous exercise.
 # hint: you need to specify the station number in the URL
 # hint: you need to specify the chemical compound in the parameters of the request (https://requests.readthedocs.io/en/master/user/quickstart/#passing-parameters-in-urls)
-# hint: look in the API documentation what the parameter to define a chemical compound is called (https://documenter.getpostman.com/view/1562017/RVnbBxf9)
+# hint: look in the API documentation what the parameter to define a chemical compound is called (https://api-docs.luchtmeetnet.nl/#intro)
 # Write your lines of code below:
     
 

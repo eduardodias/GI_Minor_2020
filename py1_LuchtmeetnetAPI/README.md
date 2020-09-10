@@ -22,7 +22,7 @@ https://api.luchtmeetnet.nl/open_api
 
 The RIVM also made an interactive mapviewer out of it. This can be accessed here: https://www.luchtmeetnet.nl/
 
-The documentation of this API can be found at https://documenter.getpostman.com/view/1562017/RVnbBxf9. 
+The documentation of this API can be found at https://api-docs.luchtmeetnet.nl/#intro. 
 
 The techniques used in this exercise can also be used to download data from many more API's from other sources, since most API's follow a similar structure, which is called [REST](https://en.wikipedia.org/wiki/Representational_state_transfer).
 
@@ -73,7 +73,7 @@ A REST API will always respond with [JSON](https://en.wikipedia.org/wiki/JSON) d
     "spouse": null
 }
 ```
-You might have noticed that this is exactly the format of Python dictionaries and lists. A response from Requests will have a [method specifically made to deal with JSON data](http://docs.python-requests.org/en/master/user/quickstart/#json-response-content) and will return a Python dictionary. Perfect for when we want to use the data in Python. It is used as follows:
+You might have noticed that this is exactly the format of Python dictionaries and lists. A response from Requests will have a [method specifically made to deal with JSON data](https://3.python-requests.org/user/quickstart/#json-response-content) and will return a Python dictionary. Perfect for when we want to use the data in Python. It is used as follows:
 ```python
 response = requests.get('https://jsonplaceholder.typicode.com/todos/1')
 response_dictionary = response.json()
@@ -81,18 +81,18 @@ print(response_dictionary)
 print(response_dictionary['userId'])
 ```
 ## Getting Started
-For this practical assignment we have prepared two exercises which will help you to understand which steps you will need to take to extract data from luchtmeetnet in order to reproduce the map for the average level of particulate matter per m3 in 2017. However, before you open them we first want you to go to the [Luchtmeetnet API documentation](https://documenter.getpostman.com/view/1562017/RVnbBxf9) and explore the API (what directories are there? What data do they return? Which options do they have?) Think of which url we can use to retrieve a list of measurement locations (stations) and how to retrieve information about a station.
+For this practical assignment we have prepared two exercises which will help you to understand which steps you will need to take to extract data from luchtmeetnet in order to reproduce the map for the average level of particulate matter per m3 in 2017. However, before you open them we first want you to go to the [Luchtmeetnet API documentation](https://api-docs.luchtmeetnet.nl/#intro) and explore the API (what directories are there? What data do they return? Which options do they have?) Think of which url we can use to retrieve a list of measurement locations (stations) and how to retrieve information about a station.
 
 ## Excercise 1: Basic Info
 Once you explored the API open [1_basic_info.py](https://github.com/SPINLab/GI_Minor_2020/blob/master/py1_LuchtmeetnetAPI/1_basic_info.py) in spyder and go trough the different steps. This script will allow you to retrieve basic information from the API. The file contains pointers and hints to help you. But remember, coding can be very frustrating. Most of the time you are trying different approaches to find out that you were on the wrong path. In the end it will be very rewarding to finally get what you we looking for. 
 
 ## Excercise 2: Timeseries data
-Now that you understand how to get basic information from the Luchtmeetnet API we are going to obtain data from a specific time period. Have another look at the [Luchtmeetnet API documentation](https://documenter.getpostman.com/view/1562017/RVnbBxf9) and try to determine which url we could use to request measurement data of a single station? Which parameters would we have to set? Now choose a location (for example the one in Amsterdam of the previous exercise) and retrieve the location number. Next, open [2_timeseries.py](https://github.com/SPINLab/GI_Minor_2020/blob/master/py1_LuchtmeetnetAPI/2_timeseries.py) and create a python script which retrieves measurement data of a station and plot the data.
+Now that you understand how to get basic information from the Luchtmeetnet API we are going to obtain data from a specific time period. Have another look at the [Luchtmeetnet API documentation](https://api-docs.luchtmeetnet.nl/#intro) and try to determine which url we could use to request measurement data of a single station? Which parameters would we have to set? Now choose a location (for example the one in Amsterdam of the previous exercise) and retrieve the location number. Next, open [2_timeseries.py](https://github.com/SPINLab/GI_Minor_2020/blob/master/py1_LuchtmeetnetAPI/2_timeseries.py) and create a python script which retrieves measurement data of a station and plot the data.
 
 ## Practical Assignment 
 With the two exercises completed you are now ready for the practical assignment. to extract the data from the luchtmeetnet API which can be used as input to reproduce the map for the average level of particulate matter of 2.5 μm and 10 μm or less per m3 in 2017. Note, that we do not ask you to interpolate the data. We just want you to extract the different point datasets. 
 
-Again have a look at the [Luchtmeetnet API documentation](https://documenter.getpostman.com/view/1562017/RVnbBxf9) and determine which data we need to request to make a map of all stations colored by the measurement of a particulate matter of 2.5 μm and 10 μm or less per m3. Now open Practical_assignment_1.py and create a python script which retrieves the average measurement data of PM 2.5 and PM 10 for 2017 for all of the Netherlands.
+Again have a look at the [Luchtmeetnet API documentation](https://api-docs.luchtmeetnet.nl/#intro) and determine which data we need to request to make a map of all stations colored by the measurement of a particulate matter of 2.5 μm and 10 μm or less per m3. Now open Practical_assignment_1.py and create a python script which retrieves the average measurement data of PM 2.5 and PM 10 for 2017 for all of the Netherlands.
 
 The script you have to produce must result in a shapefile `measurements.shp`containing the average PM 2.5 and PM10 measurements for 2017.
 

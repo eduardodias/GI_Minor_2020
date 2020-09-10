@@ -5,7 +5,7 @@
 ###############################################################################################
 
 # Since we want to be able to get data out of the luchtmeetnet we first we import the request module (which we already did for you) 
-# documentation on the request module : http://docs.python-requests.org/en/master/
+# documentation on the request module : https://3.python-requests.org/
 
 import requests
 

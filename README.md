@@ -102,6 +102,8 @@ print('Everything works!')
 -   run the code: `Run` -> `Run`
 -   do you see `Everything works!` in the output screen? Great, you're all set!
 
+-   if not, try `conda update anaconda` to update to the latest version  
+
 ## BONUS Practical Assignment
 We have a bonus practical assignment which we used in previous years. It might be interesting for the case study or research assignment which you will be making lateron in our minor. This assignments learn you how to extract location information of tweets from twitter.
 -   [practical assignment twitter](https://github.com/SPINLab/GI_Minor_2020/tree/master/py3_TwitterAPI)

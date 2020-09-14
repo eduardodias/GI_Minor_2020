@@ -104,6 +104,21 @@ print('Everything works!')
 
 -   if not, try `conda update anaconda` to update to the latest version  
 
+## Trouble shooting Geopandas:
+
+Below you find some option to try to get geopandas to work. 
+
+1.	Start by quitting/closing Anaconda and Spyder.
+Now, start-up anaconda again and launch Spyder from the Home screen in Anaconda. Try if it now works.
+
+If step 1 doesn’t work, try step 2.
+
+2.	Create a new environment in Anaconda through your command prompt (windows)/terminal (mac)  conda create -- name myenv
+Next, activate the environment using the code conda activate myenv
+Now, redo your installation of geopandas as you did before, using the command prompt/terminal. 
+Geopandas should work after this. 
+
+
 ## BONUS Practical Assignment
 We have a bonus practical assignment which we used in previous years. It might be interesting for the case study or research assignment which you will be making lateron in our minor. This assignments learn you how to extract location information of tweets from twitter.
 -   [practical assignment twitter](https://github.com/SPINLab/GI_Minor_2020/tree/master/py3_TwitterAPI)

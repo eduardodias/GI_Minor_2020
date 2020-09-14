@@ -113,7 +113,8 @@ Now, start-up anaconda again and launch Spyder from the Home screen in Anaconda.
 
 If step 1 doesn’t work, try step 2.
 
-2.	Create a new environment in Anaconda through your command prompt (windows)/terminal (mac)  conda create -- name myenv
+2.	Create a new environment in Anaconda through your command prompt (windows)/terminal (mac) 
+-> conda create -- name myenv
 Next, activate the environment using the code conda activate myenv
 Now, redo your installation of geopandas as you did before, using the command prompt/terminal. 
 Geopandas should work after this. 

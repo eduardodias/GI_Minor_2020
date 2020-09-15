@@ -20,7 +20,7 @@ import matplotlib.pyplot as plt
 # Step 2: Choose a chemical compound and request the data (no need to specify a page yet, you will by default recieve the most recent page)
 # Create a dictionary of the response in the same way you did in the previous exercise.
 # hint: you need to specify the station number in the URL
-# hint: you need to specify the chemical compound in the parameters of the request (https://requests.readthedocs.io/en/master/user/quickstart/#passing-parameters-in-urls)
+# hint: you need to specify the chemical compound in the parameters of the request (https://requests.readthedocs.io/en/master/user/quickstart/?highlight=parameters#passing-parameters-in-urls)
 # hint: look in the API documentation what the parameter to define a chemical compound is called (https://api-docs.luchtmeetnet.nl/#intro)
 # Write your lines of code below:
     

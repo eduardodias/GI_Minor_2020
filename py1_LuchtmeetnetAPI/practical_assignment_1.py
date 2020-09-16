@@ -83,6 +83,7 @@ from shapely.geometry import Point
 
 
 # Step 9: Now look back at the previous exercise and find out how you would get measurements for a specific time period (in our case 2017). 
+# Note that the luchtmeetnet API only allows you to get data for 7 days. Need to make a additional loop to get the data (if you do not succeed, 7 days would also be fine).
 # Create a script to add multiple measurements and calculate the average for 2017. Do this for 2.5 μm per m3 and repeat it for 10 μm per m3.
 # Write your code below:
 

@@ -4,17 +4,13 @@
 # Simeon Nedkov, Chris Lucas, Maurice de Kleijn, Devi Brands                                  #
 ###############################################################################################
 
-# In this practical assignment we want you to create a shapefile containing the average level of particulate matter for
-# 2.5 μm and 10 μm or less per m3 for all stations in 2017. 
+# In this practical assignment we want you to create a csv file containing the locations of every station
 # For this practical assignment you need to use a couple of modules. Most of them have already appeared in the exercises.
 # A couple of them are new and will be introduced when you need to use them.
 
 import requests
 import datetime
 import pandas as pd
-import geopandas as gpd
-import matplotlib.pyplot as plt
-from shapely.geometry import Point
 
 
 # STEP 1: As first step we want you to start a pandas DataFrame
@@ -61,7 +57,7 @@ from shapely.geometry import Point
 ################################################################################################ 
 ## At this point this version of the practical assignment differs from the initial assignment ##
 ################################################################################################ 
-# Step 6 Save the DataFrame to a csv
+# Step 6 Save the DataFrame containing the station numbers and coordiates to a csv
 # Look at https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.to_csv.html
 # REMOVE THE HASHTAG IN THE NEXT LINE AND FINISH THE LINE
 # df.to_csv('stations.csv')

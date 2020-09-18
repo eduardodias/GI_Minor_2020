@@ -62,3 +62,5 @@ import pandas as pd
 # REMOVE THE HASHTAG IN THE NEXT LINE AND FINISH THE LINE
 # df.to_csv('stations.csv')
 
+# In the csv your coordinates are showed in one field. In order to split these there are multiple options. You can either code this by using split https://www.w3schools.com/python/python_strings.asp
+# which should obviously be done before Step 6. Another option is to load in into Excel and use LEFT and RIGHT statements to copy the data into a new collumn, after which you add the new file to your GIS.

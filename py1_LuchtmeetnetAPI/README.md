@@ -97,7 +97,7 @@ Again have a look at the [Luchtmeetnet API documentation](https://api-docs.lucht
 The script you have to produce must result in a shapefile `measurements.shp`containing the average PM 2.5 and PM10 measurements for 2017.
 
 Once you finished the script go to https://www.atlasleefomgeving.nl/kaarten and download the PM 10 and PM 2.5 map data used by Andrée. Add the shape files you created and the downloaded data in a GIS (ArcGIS pro or QGIS) and systematically compare the data you retrieved from the luchtmeetnet API. Answer the following: 
-   1. Which funtionalities in GIS have you used to compare the data point with the modelled raster layer?
+   1. Which functionalities in GIS have you used to compare the data point with the modelled raster layer?
    2. Do the measurements from the Luchtmeetnet correspond with the datalayer PM 10 and PM 2.5 from the atlas van de leefomgeving?
    3. Do you think that the measurements from the Luchtmeetnet are sufficient as input for to generate the maps layers? 
    4. Image that Andrée would have used the data from the Luchtmeetnet directly in the way you did. How do you think that would have changed his analysis?
@@ -122,7 +122,7 @@ Once the file is created you will need to add it to your GIS and project the coo
 
 Now imagine you would have average measurements of PM 2.5 and PM 10 for all stations in 2017 as attributive information to the locations of the stations. Answer the following questions:
 
-    1. Which funtionalities in GIS would you use to compare the data points with the modelled raster layer?
+    1. Which functionalities in GIS would you use to compare the data points with the modelled raster layer?
 
     2. Do you think that the measurements from the Luchtmeetnet themselves would be sufficient as input for the generatated maps layers? 
     

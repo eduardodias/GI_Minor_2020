@@ -121,9 +121,13 @@ With the two exercises completed you are now ready for the practical assignment.
 Once the file is created you will need to add it to your GIS and project the coordinates stored in the csv file (for ArcGIS pro look here https://pro.arcgis.com/en/pro-app/get-started/create-points-from-a-table.htm for QGIS use the Add Delimited text function https://youtu.be/ySMcYQLln3Q ). Next go to https://www.atlasleefomgeving.nl/kaarten and download the PM 10 and PM 2.5 map data used by Andrée. Combine the locations with the measuring stations and the modelled data that has been used by Bo in one GIS view.
 
 Now imagine you would have average measurements of PM 2.5 and PM 10 for all stations in 2017 as attributive information to the locations of the stations. Answer the following questions:
+
     1. Which funtionalities in GIS would you use to compare the data points with the modelled raster layer?
-    2. Do you think that the measurements from the Luchtmeetnet themselves would be sufficient as input for to generate the maps layers? 
-    3. Image that Andrée would have used the data from the Luchtmeetnet directly in the way you did. How do you think that would have changed his analysis?
+
+    2. Do you think that the measurements from the Luchtmeetnet themselves would be sufficient as input for the generatated maps layers? 
+    
+    3. Imagine that Andrée would have used the data from the Luchtmeetnet directly in the way you did. How do you think that would have changed his analysis?
+    
     4. Now look back at the fit for purpose framework you developed for the first practical assignment. How fit would your generated point data be for the purpose of Andrée´s study? 
 
 Save your answers to a file named `py1_air_quality_answers_light.txt`.

@@ -133,3 +133,4 @@ We have a bonus practical assignment which we used in previous years. It might b
 ## Previous contributors
 -   Simeon Nedkov
 -   Chris Lucas
+-   Eduardo Dias
